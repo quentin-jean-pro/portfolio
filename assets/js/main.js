@@ -1,5 +1,6 @@
 /**
- * Quentin JEAN Portfolio — Bilingual Engine (FR / EN) & Interactive Case Studies
+ * Quentin JEAN Portfolio — Bilingual Engine (FR / EN), Theme Engine (Light / Dark)
+ * & STAR Methodology Interactive Case Studies with Zero-NDA Open Architecture Diagrams.
  */
 
 const I18N = {
@@ -33,10 +34,15 @@ const I18N = {
     stat_nda_num: "0%",
     stat_nda_label: "Risque NDA (Code Open-Source)",
 
+    // Card Stats
+    card_stat_trans: "Transpositions R&D",
+    card_stat_open: "Open-Source",
+    card_stat_nda: "Risque NDA",
+
     // Section Projets
     projects_tag: "Réalisations Concrètes",
     projects_title: "Études de Cas & Projets Phares",
-    projects_desc: "Chaque projet est documenté selon une démarche d'ingénierie rigoureuse : problématique métier, architecture technique, déploiement d'application, défis résolus et métriques vérifiables.",
+    projects_desc: "Chaque projet est documenté selon la méthode d'ingénierie STAR : Situation métier, Tâche & contraintes, Action & architecture système, Résultats chiffrés et vérifiables.",
     
     // Filters
     filter_all: "Tous les Projets (6)",
@@ -82,7 +88,7 @@ const I18N = {
     p6_desc: "Pipeline complet de prédiction de précipitations sur 140 000+ observations : imputation par micro-climat, encodage trigonométrique du vent, explicabilité SHAP et dashboard Streamlit interactif (simulateur what-if et sensibilité).",
     p6_metrics: "⚡ <strong>Serving & Explainability :</strong> Inférence temps réel (< 50ms) avec jauges de probabilité dynamiques, simulation what-if et décomposition locale des prédictions.",
 
-    btn_read_study: "Lire l'Étude de Cas (6 points) →",
+    btn_read_study: "Étude de Cas STAR (Détails & Architecture) →",
 
     // Section Méthodologie
     methodo_tag: "Approche Technique",
@@ -100,30 +106,30 @@ const I18N = {
     career_title: "Parcours Académique & Industriel",
     
     exp1_date: "Sept. 2025 — Sept. 2026",
-    exp1_role: "Ingénieur de Recherche en Alternance (IA, Systèmes & Déploiement Web)",
+    exp1_role: "Apprenti Ingénieur R&D IA, Systèmes & Déploiement Web",
     exp1_company: "Vestaclim & Laboratoire CEEP (ARMINES — Mines Paris) • Paris",
-    exp1_li1: "Conception et déploiement d'une architecture agentique complète (FastMCP) et d'un contrôleur prédictif (MPC) à horizon fuyant sur nano-ordinateur Raspberry Pi 5 sous Linux.",
-    exp1_li2: "Développement d'interfaces de pilotage et d'architectures logicielles événementielles : synchronisation basse latence des consignes sans scrutation continue, persistance hybride (séries temporelles et données relationnelles) et dashboards de supervision.",
-    exp1_li3: "Modélisation thermique 2C4R différentiable sous PyTorch (torch.nn.Module), recalage stochastique par Filtre de Kalman et coordination hebdomadaire avec l'équipe ETB de Mines Paris.",
+    exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC à horizon fuyant sur Raspberry Pi 5 sous Linux.",
+    exp1_li2: "Développement d'interfaces de pilotage et d'architectures logicielles événementielles temps réel : synchronisation basse latence des consignes sans scrutation continue, persistance hybride (séries temporelles et données relationnelles) et dashboards de supervision.",
+    exp1_li3: "Formulation d'un modèle thermodynamique 2C4R différentiable sous PyTorch (torch.nn.Module), recalage d'état par Filtre de Kalman et coordination scientifique hebdomadaire avec les chercheurs de Mines Paris.",
     exp1_li4: "Validation des livrables par la direction technique et obtention des financements pour la thèse de doctorat issue du projet.",
 
     exp2_date: "Juin 2024 — Août 2024",
-    exp2_role: "Stage Élève Ingénieur en Cybersécurité",
+    exp2_role: "Stagiaire Ingénieur Cybersécurité",
     exp2_company: "Emeria • Courbevoie",
-    exp2_li1: "Analyse des vulnérabilités, mise en place de plans de gestion des incidents de sécurité.",
-    exp2_li2: "Audit d'architecture sécurisée et gouvernance des politiques IAM sur AWS.",
+    exp2_li1: "Analyse de vulnérabilités et mise en œuvre de protocoles de gestion des incidents de sécurité IT.",
+    exp2_li2: "Audit de conformité de l'infrastructure Cloud et durcissement des politiques de gouvernance IAM AWS.",
 
     edu1_date: "Depuis Sept. 2023",
     edu1_role: "Diplôme d'Ingénieur en Informatique — Spécialisation IA",
     edu1_company: "CY Tech (ex-EISTI) • Cergy",
-    edu1_li1: "Spécialisation Intelligence Artificielle (Deep Learning, MLOps, Architectures Agentiques, Calcul Quantique).",
-    edu1_li2: "Formation doctorale à la recherche et conduite de projets R&D avancés.",
+    edu1_li1: "Majeure Intelligence Artificielle (Deep Learning, MLOps, Architectures Agentiques, Informatique Quantique).",
+    edu1_li2: "Formation doctorale à la démarche de recherche et projets d'ingénierie avancés.",
 
     edu2_date: "Janv. 2025 — Mai 2025",
-    edu2_role: "Semestre International d'Excellence",
+    edu2_role: "Semestre Académique International",
     edu2_company: "Reykjavík University • Islande",
-    edu2_li1: "Deep Learning avancé, Intelligence Artificielle et Empirical Software Engineering.",
-    edu2_li2: "Gouvernance et conformité de cybersécurité appliquée à l'université.",
+    edu2_li1: "Advanced Deep Learning, Artificial Intelligence et Empirical Software Engineering.",
+    edu2_li2: "Gouvernance cybersécurité et conformité réglementaire pour l'université.",
 
     edu3_date: "Sept. 2020 — Juin 2023",
     edu3_role: "Classes Préparatoires aux Grandes Écoles (CPGE) — MP",
@@ -144,8 +150,8 @@ const I18N = {
     brand_title: "Quentin JEAN",
     brand_badge: "AI ENGINEER",
     nav_projects: "Projects",
-    nav_methodology: "R&D Methodology",
-    nav_career: "Background",
+    nav_methodology: "R&D Approach",
+    nav_career: "Career",
     nav_contact: "Contact",
     cv_btn_fr: "📄 Resume (FR)",
     cv_btn_en: "📄 Resume (EN)",
@@ -170,10 +176,15 @@ const I18N = {
     stat_nda_num: "0%",
     stat_nda_label: "NDA Risk (100% Open-Source)",
 
+    // Card Stats
+    card_stat_trans: "R&D Blueprints",
+    card_stat_open: "Open-Source",
+    card_stat_nda: "NDA Risk",
+
     // Section Projets
     projects_tag: "Technical Showcase",
     projects_title: "Flagship Projects & Case Studies",
-    projects_desc: "Each project is engineered with production rigor: business constraints, microservice architecture, web deployment, technical challenges solved, and verifiable benchmarks.",
+    projects_desc: "Every project is documented using the STAR engineering framework: business Situation, Task & constraints, Action & system architecture, quantified Results & benchmarks.",
     
     // Filters
     filter_all: "All Projects (6)",
@@ -219,7 +230,7 @@ const I18N = {
     p6_desc: "End-to-end rainfall prediction pipeline over 140,000+ observations: micro-climate stratified imputation, trigonometric wind encoding, SHAP explainability, and interactive Streamlit simulator.",
     p6_metrics: "⚡ <strong>Serving & Explainability:</strong> Sub-50ms inference, dynamic probability gauges, what-if sensitivity simulations, and local SHAP waterfall decomposition.",
 
-    btn_read_study: "Read Case Study (6 steps) →",
+    btn_read_study: "STAR Case Study (Details & Architecture) →",
 
     // Section Méthodologie
     methodo_tag: "Technical Approach",
@@ -287,7 +298,9 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Étape 01",
-          title: "Problématique & Contexte Métier",
+          star: "S",
+          starLabel: "Situation & Contexte Industriel",
+          title: "Le Défi : Deux Échelles de Temps Incompatibles",
           content: `Cette plateforme est une <strong>maquette d'usage et d'exploitation directe de mes compétences acquises en entreprise</strong> : j'ai réappliqué l'intégralité du savoir-faire développé en R&D sur une architecture agentique moderne pour répondre à l'arbitrage énergétique et thermique des clusters de supercalculateurs IA (GPU H100/A100).
           Il existe une rupture fondamentale entre deux échelles :
           1. La <strong>boucle physique rapide</strong> (télémétrie thermique GPU, puissance absorbée TDP, bridage dynamique de fréquence, indicateur PUE et intensité carbone gCO2/kWh du réseau).
@@ -296,33 +309,61 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 02",
-          title: "Rôle, Application Web & Déploiement",
-          content: `Conception, développement et conteneurisation intégrale de la solution de bout en bout :
-          • <strong>Microservices FastMCP :</strong> Développement asynchrone des serveurs MCP sur transport SSE (ports 8001 et 8002).
-          • <strong>Orchestrateur LangGraph :</strong> StateGraph cognitif avec parsing Pydantic et pre-flight safety checks matériels.
-          • <strong>Application Web Interactive (Dashboard Streamlit) :</strong> Console de pilotage temps réel permettant aux ingénieurs de soumettre des jobs en langage naturel, d'ajuster le power-capping et de visualiser l'état du cluster.
-          • <strong>Architecture Événementielle Réactive :</strong> Conception d'un mécanisme de notification asynchrone temps réel, propageant les consignes utilisateur en mémoire vive en moins de 15 ms sans scrutation continue énergivore.
+          star: "T",
+          starLabel: "Tâche & Spécifications",
+          title: "Objectifs & Spécifications Clés",
+          content: `Conception, développement et conteneurisation intégrale d'une solution autonome sécurisée :
+          • <strong>Séparation Étanche :</strong> Isoler le hardware de télémétrie critique de la mémoire sémantique pour empêcher qu'une hallucination LLM n'endommage un nœud de calcul.
+          • <strong>Application Web Interactive (Streamlit) :</strong> Console de pilotage temps réel permettant aux ingénieurs de soumettre des jobs en langage naturel, d'ajuster le power-capping et de visualiser l'état du cluster.
+          • <strong>Architecture Événementielle Réactive :</strong> Mécanisme de notification asynchrone temps réel, propageant les consignes utilisateur en mémoire vive en moins de 15 ms sans scrutation continue énergivore.
           • <strong>Déploiement Conteneurisé Production :</strong> Multi-stage <code>Dockerfile</code>, orchestration multi-conteneurs <code>docker-compose.yml</code> et pipeline GitHub Actions CI.`
         },
         {
           num: "Étape 03",
-          title: "Architecture & Choix Technologiques",
-          content: `L'architecture découple strictement le hardware de calcul de la mémoire sémantique :
+          star: "A",
+          starLabel: "Action & Architecture Système",
+          title: "Architecture Microservices FastMCP Bi-Serveur & Diagramme",
+          content: `L'architecture découple strictement le hardware de calcul de la mémoire sémantique à travers deux microservices FastMCP asynchrones :
           • <strong>Serveur 1 (Port 8001 - FastMCP) :</strong> Télémétrie cluster GPU et actionneurs sécurisés (power-capping 200W-450W, clock throttling, dispatch de jobs).
           • <strong>Serveur 2 (Port 8002 - FastMCP) :</strong> Mémoire sémantique vectorielle des SLAs équipes (SentenceTransformers <code>all-MiniLM-L6-v2</code> + DuckDB vectoriel par équipe).
-          • <strong>Application Web & API :</strong> Interface Streamlit connectée aux microservices avec monitoring PUE et intensité carbone.
-          • <strong>Orchestrateur LangGraph :</strong> Extraction structurée Pydantic et raisonnement multimodal.`
+          • <strong>Orchestrateur LangGraph :</strong> Extraction structurée Pydantic et raisonnement multimodal sur transport SSE.`,
+          diagram: `┌────────────────────────────────────────────────────────┐
+│               Green AI Data Center Platform            │
+└────────────────────────────────────────────────────────┘
+          │ (User Request / Natural Language Job)
+          ▼
+┌──────────────────┐       ┌─────────────────────────────┐
+│ Streamlit Web App│ ◄───► │   LangGraph StateGraph      │
+│ (Live Dashboard) │       │ (Structured Pydantic Intent)│
+└──────────────────┘       └──────────────┬──────────────┘
+                                          │
+                  ┌───────────────────────┴───────────────────────┐
+                  ▼                                               ▼
+     ┌─────────────────────────┐                     ┌─────────────────────────┐
+     │  FastMCP Telemetry Svc  │                     │  FastMCP Vector DB Svc  │
+     │       (Port 8001)       │                     │       (Port 8002)       │
+     │ • Thermal Clamping      │                     │ • SentenceTransformers  │
+     │ • Power Capping (W)     │                     │ • DuckDB Multi-Tenant   │
+     │ • Clock Throttling      │                     │ • SLA Context Match     │
+     └────────────┬────────────┘                     └────────────┬────────────┘
+                  │                                               │
+                  ▼                                               ▼
+       [ Prometheus / GPUs ]                             [ Isolated Vector DB ]`
         },
         {
           num: "Étape 04",
-          title: "Défis Techniques & Solutions Apportées",
+          star: "A",
+          starLabel: "Action & Implémentation Logicielle",
+          title: "Garde-Fous Matériels & Contrats d'Interface",
           content: `• <strong>Résilience Cyber-Physique :</strong> Implémentation d'un contrat d'interface JSON strict et immuable (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) garantissant zéro plantage client.
           • <strong>Protection Matérielle & Décorateur de Sécurité :</strong> Clamping automatique de la puissance GPU et coupure thermique d'urgence dès que la température dépasse 80.0°C, interceptant toute panne matérielle via un décorateur Python robuste.
           • <strong>Isolation Multi-Tenant :</strong> Base de données DuckDB dédiée par équipe de recherche (<code>team_&lt;id&gt;.db</code>) supprimant tout risque de fuite de contexte.`
         },
         {
           num: "Étape 05",
-          title: "Tests, Métriques & Résultats",
+          star: "R",
+          starLabel: "Résultats & Benchmarks",
+          title: "Métriques Chiffrées & Validation E2E",
           content: `• <strong>Temps de réponse de bout en bout :</strong> &lt; 380 ms pour la boucle de récupération vectorielle et l'audit de télémétrie.
           • <strong>Déploiement Clé en Main :</strong> Déploiement reproductible en une commande <code>docker compose up</code>.
           • <strong>Robustesse :</strong> 100% des erreurs matérielles ou timeouts interceptés par des directives sémantiques de repli (fallback).
@@ -330,7 +371,9 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 06",
-          title: "Enseignements & Perspectives",
+          star: "R",
+          starLabel: "Impact & Enseignements",
+          title: "Enseignements Techniques & Démarche d'Ingénierie",
           content: `• Démontre la supériorité de MCP pour outiller les agents autonomes sur des infrastructures cloud critiques et conteneurisées.
           • Perspectives : Intégration d'un module d'arbitrage prédictif pour différer les entraînements non urgents sur les heures à mix électrique 100% renouvelable.`
         }
@@ -345,7 +388,9 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Étape 01",
-          title: "Problématique & Contexte Métier",
+          star: "S",
+          starLabel: "Situation & Contexte Industriel",
+          title: "Le Défi : Concilier Vitesse de Recharge et Dégradation Physique",
           content: `Cette plateforme est une <strong>maquette d'usage et d'exploitation directe de mes compétences acquises en entreprise</strong> sur le contrôle prédictif (MPC) et la thermodynamique. J'ai transposé ces méthodes formelles sur un enjeu critique de la transition énergétique : la charge ultra-rapide des packs batteries de véhicules électriques (borne DC haute puissance).
           La vitesse de charge doit composer avec deux barrières physiques critiques :
           1. <strong>Le risque de placage de lithium métallique</strong> en cas de surtension (V &gt; 4.20V).
@@ -354,7 +399,9 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 02",
-          title: "Rôle & Modélisation Sans Données Privées",
+          star: "T",
+          starLabel: "Tâche & Spécifications",
+          title: "Objectifs & Modélisation Sans Données Privées",
           content: `Conception intégrale de la chaîne d'optimisation et d'identification de système :
           • <strong>Modèle Physique Thévenin 2-RC :</strong> Modélisation d'état continue couplant dynamique électrique (SoC, surtensions de diffusion V_rc) et thermique (conduction cœur-surface et convection).
           • <strong>Courbe OCV Ouverte de Référence :</strong> Intégration de la courbe expérimentale de titrage galvanostatique à très bas régime (C/20) issue de la littérature scientifique ouverte (NMC 21700, 3.0V à 4.20V).
@@ -363,22 +410,53 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 03",
-          title: "Architecture & Choix Technologiques",
+          star: "A",
+          starLabel: "Action & Architecture Système",
+          title: "Contrôleur MPC à Horizon Fuyant & Schéma Boucle Fermée",
           content: `• <strong>Horizon Fuyant Prédictif (3 minutes) :</strong> Minimisation en temps réel de J = W_soc · (SoC_target - SoC)² + W_thermal · max(0, T_core - 40)² + W_cool · P_cool + W_rate · (ΔI)² + W_volt · Pénalités.
           • <strong>Intégration Numérique RK4 :</strong> Résolution différentielle Runge-Kutta d'ordre 4 des 4 variables d'état (SoC, V_rc, T_core, T_surface).
-          • <strong>Optimisation Sous Contraintes :</strong> Méthode SLSQP avec initialisation par warm-start pour converger en moins de 0.5 seconde.
-          • <strong>Optimisation Multi-Objectif :</strong> Algorithme évolutionnaire cartographiant la frontière de Pareto et calculant l'hypervolume 2D.`
+          • <strong>Optimisation Sous Contraintes :</strong> Méthode SLSQP avec initialisation par warm-start pour converger en moins de 0.5 seconde.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│              Closed-Loop Battery Fast-Charging MPC               │
+└──────────────────────────────────────────────────────────────────┘
+       ┌──────────────────────────────────────────────────┐
+       │     Reference Trajectory (0% -> 80% Fast SoC)    │
+       └────────────────────────┬─────────────────────────┘
+                                │
+                                ▼
+       ┌──────────────────────────────────────────────────┐
+       │   Receding-Horizon MPC Controller (SLSQP Solver) │
+       │   min J = W_soc·(ΔSoC)² + W_therm·(T-40)² + W_cool│
+       └────────────────────────┬─────────────────────────┘
+                                │ Optimal Command u* = [I*, P_cool*]
+                                ▼
+       ┌──────────────────────────────────────────────────┐
+       │         Actuation: DC Charger & Chiller          │
+       └────────────────────────┬─────────────────────────┘
+                                │ Current I(t), Cooling P(t)
+                                ▼
+       ┌──────────────────────────────────────────────────┐
+       │  2-RC Thevenin + Lumped Thermal Digital Twin     │
+       │  • State-Space ODEs (V_rc1, V_rc2, T_core, T_surf│
+       │  • Parameter Calibration (MAP Bayesian on HPPC)  │
+       └────────────────────────┬─────────────────────────┘
+                                │ Real-Time Feedback (V_term, T_core)
+                                └──────► [ T_core < 45°C Hard Safety Guard ]`
         },
         {
           num: "Étape 04",
-          title: "Défis Techniques & Solutions Apportées",
+          star: "A",
+          starLabel: "Action & Implémentation Logicielle",
+          title: "Résolution Non-Linéaire & Refroidissement Anticipatoire",
           content: `• <strong>Non-linéarités thermiques :</strong> Prise en compte de la dépendance en température d'Arrhenius de la résistance interne et de la génération de chaleur réversible (chaleur entropique dOCV/dT).
           • <strong>Satisfaction stricte des bornes :</strong> 0 dépassement de la limite critique de 45°C grâce à la pré-activation de l'étage de refroidissement liquide par anticipation.
           • <strong>Indépendance des données :</strong> Le solveur résout la physique en direct à chaque pas de temps, éliminant tout besoin de jeu de données d'entraînement massif.`
         },
         {
           num: "Étape 05",
-          title: "Tests, Métriques & Résultats",
+          star: "R",
+          starLabel: "Résultats & Benchmarks",
+          title: "Métriques Chiffrées & Comparatif CC-CV",
           content: `• <strong>Effort Thermique Global :</strong> Réduit de <strong>-79.0%</strong> par rapport au protocole industriel standard CC-CV.
           • <strong>Pic de Température Cœur :</strong> Maintenu à <strong>39.5°C</strong> contre 45.8°C en CC-CV (qui violait la zone critique des 45°C).
           • <strong>Précision du Jumeau Numérique (RMSE) :</strong> <strong>RMSE = 0.0021 V</strong> sur la tension aux bornes lors du profil HPPC.
@@ -386,7 +464,9 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 06",
-          title: "Enseignements & Perspectives",
+          star: "R",
+          starLabel: "Impact & Enseignements",
+          title: "Enseignements Techniques & Perspectives Industrielles",
           content: `• Démontre la supériorité de l'optimisation prédictive sous contraintes sur les heuristiques industrielles statiques pour prolonger la durée de vie des packs batteries.
           • Perspectives : Embarquement sur le BMS (Battery Management System) du véhicule via génération de code C ANSI.`
         }
@@ -401,12 +481,16 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Étape 01",
-          title: "Problématique & Contexte Métier",
+          star: "S",
+          starLabel: "Situation & Contexte Industriel",
+          title: "Le Défi : La Dette Technique des Modèles de ML",
           content: `Beaucoup de modèles de Machine Learning restent au stade de notebooks exploratoires et échouent en production par manque de reproductibilité, de validation de données et de tests automatisés. L'objectif était de construire un pipeline de prédiction d'achat e-commerce complet, auditable et résilient aux variations de schéma.`
         },
         {
           num: "Étape 02",
-          title: "Rôle & Responsabilités Personnelles",
+          star: "T",
+          starLabel: "Tâche & Spécifications",
+          title: "Objectifs & Responsabilités Clés",
           content: `• Mise en place de l'architecture logicielle modulaire avec Kedro.
           • Implémentation des nœuds de feature engineering et de gestion des valeurs manquantes.
           • Intégration de l'optimisation bayésienne des hyperparamètres (Hyperopt TPE).
@@ -414,26 +498,58 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 03",
-          title: "Architecture & Choix Technologiques",
+          star: "A",
+          starLabel: "Action & Architecture Système",
+          title: "Pipeline Modulaire Kedro DAG & Diagramme de Flux",
           content: `• <strong>Orchestrateur :</strong> Kedro (séparation Data Catalog, Paramètres, Pipelines).
           • <strong>Pipelines modulaires :</strong> <code>loading</code> (validation), <code>processing</code> (LabelEncoding, partitionnement stratifié), <code>training</code> (LightGBM + CV).
-          • <strong>Optimisation :</strong> Hyperopt avec Tree-structured Parzen Estimator (TPE) sur validation croisée répétée.`
+          • <strong>Optimisation :</strong> Hyperopt avec Tree-structured Parzen Estimator (TPE) sur validation croisée répétée.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│              Industrialized Kedro MLOps Pipeline                 │
+└──────────────────────────────────────────────────────────────────┘
+      [ Raw Transaction Data ]
+                 │
+                 ▼
+     ┌────────────────────────┐
+     │ 1. Data Processing Node│ (Imputation, One-Hot, Schema Validation)
+     └───────────┬────────────┘
+                 ▼
+     ┌────────────────────────┐
+     │ 2. Bayesian Tuning Node│ (Hyperopt TPE Optimization over 50 Trials)
+     └───────────┬────────────┘
+                 ▼
+     ┌────────────────────────┐
+     │ 3. Model Training Node │ (LightGBM Classifier + Cross-Validation)
+     └───────────┬────────────┘
+                 │
+                 ├───────────────────────────────┐
+                 ▼                               ▼
+     ┌────────────────────────┐      ┌────────────────────────┐
+     │ Automated Pytest Suite │      │  Production Artifacts  │
+     │ (Coverage & CI Checks) │      │ (Joblib Model + Metrics)│
+     └────────────────────────┘      └────────────────────────┘`
         },
         {
           num: "Étape 04",
-          title: "Défis Techniques & Solutions Apportées",
+          star: "A",
+          starLabel: "Action & Implémentation Logicielle",
+          title: "Prévention du Data Leakage & Rigueur Software",
           content: `• <strong>Prévention du Data Leakage :</strong> Ajustement strict des transformateurs (LabelEncoders) uniquement sur le jeu d'entraînement avant projection sur le test.
           • <strong>Qualité du code :</strong> Configuration de règles de linting strictes avec <code>ruff.toml</code> et typage statique Python rigoureux.`
         },
         {
           num: "Étape 05",
-          title: "Tests, Métriques & Résultats",
+          star: "R",
+          starLabel: "Résultats & Benchmarks",
+          title: "Gains de Performance & Reproductibilité",
           content: `• <strong>Performance F1-score :</strong> Amélioration de <strong>+7.4%</strong> par rapport au modèle LightGBM avec hyperparamètres par défaut.
           • <strong>Automatisation :</strong> 100% du pipeline reproductible en une commande <code>kedro run</code>.`
         },
         {
           num: "Étape 06",
-          title: "Enseignements & Perspectives",
+          star: "R",
+          starLabel: "Impact & Enseignements",
+          title: "Enseignements Techniques",
           content: `• L'application des principes de Software Engineering au Machine Learning (MLOps) est un prérequis indispensable pour garantir la fiabilité des inférences en production.`
         }
       ],
@@ -447,106 +563,185 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Étape 01",
-          title: "Problématique & Contexte Métier",
-          content: `Les modèles LLM généralistes souffrent d'hallucinations arithmétiques sévères et de pertes de contexte critiques lorsqu'ils doivent concevoir des programmes combinant calculs caloriques précis et contraintes médicales strictes (allergies, pathologies).`
+          star: "S",
+          starLabel: "Situation & Contexte Industriel",
+          title: "Le Défi : Les Hallucinations Arithmétiques des LLMs",
+          content: `Les modèles de langage (LLM) souffrent de deux faiblesses majeures : les hallucinations dans les calculs arithmétiques complexes (besoins caloriques, calculs de macronutriments) et l'incapacité à respecter des contraintes médicales strictes (allergies, carences).`
         },
         {
           num: "Étape 02",
-          title: "Rôle & Responsabilités Personnelles",
-          content: `• Architecture du graphe d'états distribué avec LangGraph.
-          • Création des agents spécialisés (Entraînement, Nutritionniste, Superviseur, Garde-fous médicaux).
-          • Interfaçage avec des jeux de données nutritionnels réels pour transformer le LLM en moteur de décision outillé.`
+          star: "T",
+          starLabel: "Tâche & Spécifications",
+          title: "Objectifs & Décomposition Spécialisée",
+          content: `• Concevoir une architecture multi-agents coordonnée où chaque agent possède un rôle restreint et auditable.
+          • Intégrer des outils de calcul déterministes (Python) pour déléguer les équations mathématiques (Harris-Benedict, Mifflin-St Jeor).
+          • Raccorder les agents à une base de données nutritionnelle réelle pour les recommandations d'aliments.`
         },
         {
           num: "Étape 03",
-          title: "Architecture & Choix Technologiques",
-          content: `• <strong>StateGraph LangGraph :</strong> Coordination multi-nœuds avec gestion d'état partagé (<code>AgentState</code>).
-          • <strong>Outils déterministes :</strong> Datasets CSV de macronutriments et dépenses caloriques interrogés via Pandas et RapidFuzz.
-          • <strong>Moteur LLM :</strong> Llama 3 via Ollama en exécution locale pour la confidentialité des données de santé.`
+          star: "A",
+          starLabel: "Action & Architecture Système",
+          title: "Architecture Multi-Agents LangGraph & Diagramme d'État",
+          content: `• <strong>Orchestrateur :</strong> LangGraph StateGraph gérant les transitions d'états et le passage de messages.
+          • <strong>Agents spécialisés :</strong> Agent Profil / Santé (anamnèse), Agent Calculateur (dépense énergétique), Agent Nutritionnel (composition des repas), Agent Validateur (vérification des allergies).
+          • <strong>Outils déterministes :</strong> Fonctions Python typées exécutant les calculs sans hallucination.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│           Multi-Agent Nutrition & Health System (LangGraph)      │
+└──────────────────────────────────────────────────────────────────┘
+                 [ User Health & Caloric Prompt ]
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │    Supervisor Agent Node    │
+                 │   (Intent & Goal Parsing)   │
+                 └──────────────┬──────────────┘
+                                │
+              ┌─────────────────┴─────────────────┐
+              ▼                                   ▼
+ ┌────────────────────────┐          ┌────────────────────────┐
+ │   Caloric Agent Node   │          │   Macronutrient Agent  │
+ │ (BMR / TDEE Calculator)│          │ (Protein / Carb Splits)│
+ └────────────┬───────────┘          └────────────┬───────────┘
+              │                                   │
+              └─────────────────┬─────────────────┘
+                                ▼
+                 ┌─────────────────────────────┐
+                 │   Deterministic Tool Call   │
+                 │   (USDA Dataset Queries)    │
+                 └──────────────┬──────────────┘
+                                ▼
+                 ┌─────────────────────────────┐
+                 │  Medical Guardrails & Allergen Validator  │
+                 │   (100% Zero Hallucination) │
+                 └─────────────────────────────┘`
         },
         {
           num: "Étape 04",
-          title: "Défis Techniques & Solutions Apportées",
-          content: `• <strong>Élimination du risque d'hallucination nutritionnelle :</strong> Les calculs ne sont jamais confiés au LLM en texte libre, mais délégués à des outils déterministes réels.
-          • <strong>Gestion des conflits d'objectifs :</strong> Le Superviseur et les critiques valident la conformité clinique avant formulation de la réponse finale.`
+          star: "A",
+          starLabel: "Action & Implémentation Logicielle",
+          title: "Validation des Contraintes & Boucle de Correction",
+          content: `• <strong>Validation en boucle fermée :</strong> L'Agent Validateur vérifie que chaque repas recommandé ne contient aucun ingrédient interdit. En cas de non-conformité, il rejette la proposition et renvoie l'état à l'agent nutritionnel avec les contraintes non respectées.`
         },
         {
           num: "Étape 05",
-          title: "Tests, Métriques & Résultats",
-          content: `• <strong>Benchmark comparatif E2E (5 scénarios critiques) :</strong>
-          • Précision des calculs : <strong>100%</strong> pour le Multi-Agents outillé vs 68% pour un LLM mono-agent classique.
-          • Respect des allergies alimentaires : <strong>100% de conformité</strong>.`
+          star: "R",
+          starLabel: "Résultats & Benchmarks",
+          title: "Précision Arithmétique & Respect des Contraintes",
+          content: `• <strong>Précision des calculs :</strong> <strong>100% de calculs corrects</strong> (vs 68% pour un LLM monolithique standard).
+          • <strong>Sécurité médicale :</strong> <strong>100% des contraintes d'allergies</strong> respectées sur un jeu d'évaluation de 50 profils complexes.`
         },
         {
           num: "Étape 06",
-          title: "Enseignements & Perspectives",
-          content: `• Démontre qu'une architecture multi-agents outillée déterministe est la seule approche viable pour des applications critiques nécessitant à la fois flexibilité linguistique et exactitude numérique.`
+          star: "R",
+          starLabel: "Impact & Enseignements",
+          title: "Enseignements Techniques",
+          content: `• La décomposition agentique avec outillage déterministe est la seule voie viable pour déployer des LLMs sur des cas d'usage à haute criticité (santé, ingénierie, finance).`
         }
       ],
       github: "../4-multiagent-nutrition-nlp"
     },
 
     "crossvit-vision": {
-      title: "Classification Fine d'Herbiers par Vision Transformers (CrossViT) & Attention Rollout",
+      title: "Classification d'Herbiers par Vision Transformers Multi-Échelles (CrossViT)",
       category: "Deep Learning & Vision par Ordinateur",
-      origin: "Projet Recherche Deep Learning CY Tech",
+      origin: "Projet de Recherche Appliquée & Deep Learning (CY Tech)",
       steps: [
         {
           num: "Étape 01",
-          title: "Problématique & Contexte Métier",
-          content: `La numérisation patrimoniale des planches d'herbiers botaniques nécessite une identification automatisée précise d'espèces végétales. Le défi réside dans la faible variance inter-espèces, les artefacts visuels de collections (timbres, étiquettes, rubans) et la nécessité de combiner des détails microscopiques (nervures de feuilles, épines) et la morphologie macroscopique globale.`
+          star: "S",
+          starLabel: "Situation & Contexte Industriel",
+          title: "Le Défi : Artefacts Parasites sur les Spécimens de Muséum",
+          content: `La numérisation de collections botaniques patrimoniales (planches d'herbiers centenaires) pose un défi majeur : les feuilles d'herbiers contiennent des artefacts humains (timbres, étiquettes manuscrites, bandes de scotch). Les modèles de Vision Transformer classiques ont tendance à sur-apprendre ces détails plutôt que les structures botaniques réelles (veinules, forme des pétales).`
         },
         {
           num: "Étape 02",
-          title: "Rôle & Responsabilités Personnelles",
-          content: `• Implémentation modulaire de l'architecture CrossViT et de la variante témoin mono-résolution en PyTorch pur.
-          • Développement de l'algorithme d'<strong>Attention Rollout</strong> pour tracer la propagation d'attention inter-couches vers le token [CLS].
-          • Conception d'une fonction de perte <strong>IoURegularizedLoss</strong> pénalisant la focalisation d'attention en dehors des structures végétales réelles.
-          • Générateur de données synthétiques pour une reproductibilité publique totale sans diffusion de données privées.`
+          star: "T",
+          starLabel: "Tâche & Spécifications",
+          title: "Objectifs de Recherche & Métrique d'Interprétabilité",
+          content: `• Évaluer et adapter l'architecture CrossViT (Vision Transformer multi-échelles) pour la classification fine d'espèces végétales.
+          • Développer une méthode d'explicabilité par Attention Rollout pour quantifier la proportion d'attention portée sur la plante vs les artefacts.
+          • Définir une fonction de perte régularisée par l'IoU (Intersection over Union) de l'attention pour contraindre le modèle à regarder le végétal.`
         },
         {
           num: "Étape 03",
-          title: "Architecture & Choix Technologiques",
-          content: `• <strong>Dual-Branch Vision Transformer :</strong>
-          - Branche 1 (Petits patchs 12x12) : extraction des détails fins et textures anatomiques.
-          - Branche 2 (Grands patchs 16x16) : capture de la géométrie spatiale globale et ramification.
-          • <strong>Cross-Attention :</strong> Échange périodique de tokens [CLS] entre branches.
-          • <strong>Perte Régularisée IoU :</strong> L_total = L_CE + λ · (1 − IoU(Attention, Masque)).`
+          star: "A",
+          starLabel: "Action & Architecture Système",
+          title: "Architecture CrossViT Bi-Branche & Diagramme",
+          content: `• <strong>Branche Petits Patchs (Fine-grained) :</strong> Traitement haute résolution capturant les textures locales (nervures, pilosité).
+          • <strong>Branche Grands Patchs (Coarse-grained) :</strong> Traitement basse résolution extrayant la silhouette et la morphologie globale.
+          • <strong>Échange par Cross-Attention :</strong> Fusion bidirectionnelle des représentations visuelles via des modules de cross-attention légers.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│            CrossViT Botanical Herbarium Classification           │
+└──────────────────────────────────────────────────────────────────┘
+             [ High-Resolution Herbarium Sheet Scan ]
+                                │
+        ┌───────────────────────┴───────────────────────┐
+        ▼                                               ▼
+ ┌──────────────────────────────┐        ┌──────────────────────────────┐
+ │ Small Patch Branch (Fine)    │        │ Large Patch Branch (Coarse)  │
+ │ • High spatial resolution    │        │ • Broad structural context   │
+ │ • Extracts leaf venation     │        │ • Plant morphology patterns  │
+ └──────────────┬───────────────┘        └──────────────┬───────────────┘
+                │                                       │
+                └───────────► ◄─────────────────────────┘
+                   Cross-Attention Token Exchange
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │   Attention Rollout & IoU   │
+                 │     Regularization Loss     │
+                 │  (Forces Focus on Plant)    │
+                 └──────────────┬──────────────┘
+                                ▼
+                 ┌─────────────────────────────┐
+                 │ Fine-Grained Taxon Predict  │
+                 │   (+4.2% Top-1 Accuracy)    │
+                 └─────────────────────────────┘`
         },
         {
           num: "Étape 04",
-          title: "Défis Techniques & Solutions Apportées",
-          content: `• <strong>Suppression des corrélations fallacieuses :</strong> L'intégration de la perte régularisée IoU force le Transformer à ignorer les étiquettes et cartouches d'accession des planches d'herbiers.
-          • <strong>Interprétabilité clinique :</strong> Visualisation des heatmaps d'attention en overlay binarisées par quantile Q0.8.`
+          star: "A",
+          starLabel: "Action & Implémentation Logicielle",
+          title: "Régularisation par Attention Rollout & PyTorch",
+          content: `• Implémentation en PyTorch d'une perte hybride : $\\mathcal{L} = \\mathcal{L}_{CE} + \\lambda \\cdot (1 - \\text{IoU}(\\text{AttentionMap}, \\text{PlantMask}))$.
+          • Entraînement distribué sur GPU avec mixup, cutmix et label smoothing.`
         },
         {
           num: "Étape 05",
-          title: "Tests, Métriques & Résultats",
-          content: `• <strong>Précision Top-1 :</strong> <strong>+4.2%</strong> de gain par rapport à la baseline ViT mono-résolution.
-          • <strong>Alignement Spatial IoU :</strong> Forte corrélation vérifiée entre les cartes d'attention rollout et les masques de segmentation réels.`
+          star: "R",
+          starLabel: "Résultats & Benchmarks",
+          title: "Gains en Précision & Interprétabilité",
+          content: `• <strong>Top-1 Accuracy :</strong> Gain de <strong>+4.2%</strong> par rapport à un ViT-B/16 standard.
+          • <strong>Focalisation de l'attention :</strong> L'IoU entre les cartes d'attention et les masques de segmentation réels des plantes est passé de 0.31 à 0.68.`
         },
         {
           num: "Étape 06",
-          title: "Enseignements & Perspectives",
-          content: `• Démontre la puissance des mécanismes d'attention régularisés pour garantir que les réseaux profonds apprennent de véritables marqueurs taxonomiques plutôt que des biais contextuels.`
+          star: "R",
+          starLabel: "Impact & Enseignements",
+          title: "Enseignements Scientifiques",
+          content: `• Les architectures multi-échelles couplées à des contraintes d'attention régularisée sont indispensables pour éliminer les biais fallacieux en vision industrielle et scientifique.`
         }
       ],
       github: "../5-crossvit-botanical-vision"
     },
 
-    "weather-prediction": {
-      title: "Application Prédictive Météo & Explicabilité (Streamlit, XGBoost & SHAP)",
-      category: "Data Science & Déploiement d'Applications",
-      origin: "Projet Application Métier IA CY Tech",
+    "weather-app": {
+      title: "Application Web Prédictive Météo & Explicabilité SHAP",
+      category: "Data Science, Machine Learning & Web App",
+      origin: "Projet Ingénierie Data Science (CY Tech)",
       steps: [
         {
           num: "Étape 01",
-          title: "Problématique & Contexte Métier",
-          content: `Prédire le risque de précipitations à J+1 sur l'ensemble du territoire australien à partir de 140 000+ relevés météorologiques historiques comportant de nombreuses données manquantes et un fort déséquilibre de classes.`
+          star: "S",
+          starLabel: "Situation & Contexte Industriel",
+          title: "Le Défi : Prédire les Précipitations avec Explicabilité",
+          content: `Prédire les précipitations à J+1 sur un continent entier (Australie, 140 000+ observations) à partir de capteurs météorologiques multi-stations hétérogènes présentant de fortes proportions de données manquantes et un déséquilibre de classe important.`
         },
         {
           num: "Étape 02",
-          title: "Rôle & Responsabilités Personnelles",
+          star: "T",
+          starLabel: "Tâche & Spécifications",
+          title: "Objectifs & Pipeline Complet",
           content: `• Analyse exploratoire et nettoyage des données avec imputation stratifiée par micro-climat (médiane et mode par station).
           • Feature engineering atmosphérique : encodage trigonométrique du vent (sin/cos), amplitude thermique diurne, chute de pression barométrique.
           • Benchmark de modèles (Régression Logistique, Random Forest, XGBoost, Perceptron Multi-Couches) et analyse d'explicabilité globale/locale avec SHAP.
@@ -554,27 +749,57 @@ const CASE_STUDIES = {
         },
         {
           num: "Étape 03",
-          title: "Architecture & Choix Technologiques",
+          star: "A",
+          starLabel: "Action & Architecture Système",
+          title: "Architecture Pipeline & Application Web Streamlit",
           content: `• <strong>Data Pipeline :</strong> Scikit-Learn Pipeline, standardisation, imputation robuste sans data leakage.
           • <strong>Modèle :</strong> XGBoost optimisé pour la courbe Precision-Recall.
           • <strong>Explicabilité :</strong> SHAP summary plots et waterfall plots pour l'audit des erreurs individuelles.
-          • <strong>UI / Serving :</strong> Streamlit, Plotly pour la visualisation interactive temps réel.`
+          • <strong>UI / Serving :</strong> Streamlit, Plotly pour la visualisation interactive temps réel.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│          Weather Prediction & Explainability Application         │
+└──────────────────────────────────────────────────────────────────┘
+          [ 140,000+ Raw Multi-Station Climate Observations ]
+                                │
+                                ▼
+          ┌───────────────────────────────────────────────┐
+          │ Micro-Climate Imputation & Cyclic Wind Encode │
+          └─────────────────────┬─────────────────────────┘
+                                ▼
+          ┌───────────────────────────────────────────────┐
+          │    Scikit-Learn / XGBoost Predictive Engine   │
+          │    (Sub-50ms Inference Latency per Sample)    │
+          └─────────────────────┬─────────────────────────┘
+                                │
+        ┌───────────────────────┴───────────────────────┐
+        ▼                                               ▼
+ ┌──────────────────────────────┐        ┌──────────────────────────────┐
+ │ Interactive Streamlit App    │        │ SHAP Explainability Engine   │
+ │ • Real-time probability dial │        │ • Local feature impact       │
+ │ • Dynamic what-if simulator  │        │ • Global feature importance  │
+ └──────────────────────────────┘        └──────────────────────────────┘`
         },
         {
           num: "Étape 04",
-          title: "Défis Techniques & Solutions Apportées",
+          star: "A",
+          starLabel: "Action & Implémentation Logicielle",
+          title: "Gestion du Biais & Décomposition Locale SHAP",
           content: `• <strong>Absence de Data Leakage :</strong> Imputation spatio-temporelle cohérente évitant d'utiliser des statistiques futures lors de l'entraînement.
           • <strong>Auditabilité :</strong> L'intégration de SHAP permet d'expliquer instantanément pourquoi un orage a été prédit (chute brutale de pression + pic d'humidité à 15h).`
         },
         {
           num: "Étape 05",
-          title: "Tests, Métriques & Résultats",
-          content: `• Dashboard fluide avec temps de calcul < 50ms pour une prédiction temps réel basée sur des curseurs dynamiques.
+          star: "R",
+          starLabel: "Résultats & Benchmarks",
+          title: "Latence Temps Réel & Tests Automatisés",
+          content: `• Dashboard fluide avec temps de calcul &lt; 50ms pour une prédiction temps réel basée sur des curseurs dynamiques.
           • Suite de tests unitaires automatisée validant les transformations trigonométriques et le vecteur de features.`
         },
         {
           num: "Étape 06",
-          title: "Enseignements & Perspectives",
+          star: "R",
+          starLabel: "Impact & Enseignements",
+          title: "Enseignements Techniques",
           content: `• L'interactivité et la vulgarisation visuelle d'un modèle d'IA sont clés pour son adoption par des utilisateurs métiers non techniques.`
         }
       ],
@@ -590,7 +815,9 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Step 01",
-          title: "Problem Statement & Industry Context",
+          star: "S",
+          starLabel: "Situation & Industrial Context",
+          title: "The Challenge: Two Incompatible Time Scales",
           content: `This platform is an <strong>open reference blueprint transposing my enterprise R&D expertise</strong>: I applied the methodologies developed in industrial R&D toward the thermal and energy arbitration of AI supercomputer clusters (GPU H100/A100).
           There is a critical tension across two time horizons:
           1. The <strong>fast physical loop</strong> (GPU junction temperatures, power capping TDP, dynamic frequency throttling, PUE metrics, and grid carbon intensity in gCO2/kWh).
@@ -599,33 +826,61 @@ const CASE_STUDIES = {
         },
         {
           num: "Step 02",
-          title: "Role, Web Application & Deployment",
+          star: "T",
+          starLabel: "Task & Specifications",
+          title: "Key Objectives & Technical Specifications",
           content: `End-to-end design, implementation, and containerization:
-          • <strong>FastMCP Microservices:</strong> Asynchronous MCP servers running over SSE transport (ports 8001 and 8002).
-          • <strong>LangGraph Cognitive Orchestrator:</strong> StateGraph engine with Pydantic contract validation and hardware pre-flight guards.
-          • <strong>Interactive Web Supervision Application:</strong> Real-time Streamlit dashboard allowing engineers to submit NLP compute requests, simulate hardware overheating, and tune power capping.
+          • <strong>Strict Boundary Decoupling:</strong> Separate telemetry hardware actuators from semantic context memory to prevent any LLM hallucination from causing thermal hardware damage.
+          • <strong>Interactive Web Application:</strong> Real-time Streamlit dashboard allowing engineers to submit NLP compute requests, simulate hardware overheating, and tune power capping.
           • <strong>Reactive Event-Driven Architecture:</strong> Designed a low-latency asynchronous event-notification pattern, pushing user setpoints into controller RAM in under 15 ms without polling.
           • <strong>Production Containerized Deployment:</strong> Multi-stage <code>Dockerfile</code>, multi-service <code>docker-compose.yml</code> orchestration, and automated GitHub Actions CI.`
         },
         {
           num: "Step 03",
-          title: "Architecture & Technical Stack",
+          star: "A",
+          starLabel: "Action & System Architecture",
+          title: "Dual-Server FastMCP Microservices & Topology Diagram",
           content: `Strict separation of hardware telemetry from semantic context memory:
           • <strong>Server 1 (Port 8001 - FastMCP):</strong> GPU cluster telemetry and safety actuators (power capping 200W-450W, clock throttling, job dispatch).
           • <strong>Server 2 (Port 8002 - FastMCP):</strong> Multi-tenant SLA vector memory (SentenceTransformers <code>all-MiniLM-L6-v2</code> + isolated per-team DuckDB databases).
-          • <strong>Web Application & API:</strong> Streamlit console connected to microservices with live PUE and grid carbon monitoring.
-          • <strong>LangGraph Orchestrator:</strong> Pydantic structured extraction and multi-step reasoning.`
+          • <strong>LangGraph Orchestrator:</strong> Pydantic structured extraction and multi-step reasoning over SSE transport.`,
+          diagram: `┌────────────────────────────────────────────────────────┐
+│               Green AI Data Center Platform            │
+└────────────────────────────────────────────────────────┘
+          │ (User Request / Natural Language Job)
+          ▼
+┌──────────────────┐       ┌─────────────────────────────┐
+│ Streamlit Web App│ ◄───► │   LangGraph StateGraph      │
+│ (Live Dashboard) │       │ (Structured Pydantic Intent)│
+└──────────────────┘       └──────────────┬──────────────┘
+                                          │
+                  ┌───────────────────────┴───────────────────────┐
+                  ▼                                               ▼
+     ┌─────────────────────────┐                     ┌─────────────────────────┐
+     │  FastMCP Telemetry Svc  │                     │  FastMCP Vector DB Svc  │
+     │       (Port 8001)       │                     │       (Port 8002)       │
+     │ • Thermal Clamping      │                     │ • SentenceTransformers  │
+     │ • Power Capping (W)     │                     │ • DuckDB Multi-Tenant   │
+     │ • Clock Throttling      │                     │ • SLA Context Match     │
+     └────────────┬────────────┘                     └────────────┬────────────┘
+                  │                                               │
+                  ▼                                               ▼
+       [ Prometheus / GPUs ]                             [ Isolated Vector DB ]`
         },
         {
           num: "Step 04",
-          title: "Engineering Challenges & Solutions",
+          star: "A",
+          starLabel: "Action & Implementation",
+          title: "Hardware Safety Guards & Interface Contracts",
           content: `• <strong>Cyber-Physical Resilience:</strong> Immutable JSON contract envelopes (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) ensuring zero client crashes.
-          • <strong>Hardware Safety Guard & Python Decorator:</strong> Automatic GPU power clamping and emergency thermal cutoff at 80.0°C, intercepting any telemetry bus exception via a dedicated Python decorator.
+          • <strong>Hardware Safety Guard:</strong> Automatic GPU power clamping and emergency thermal cutoff at 80.0°C, intercepting any telemetry bus exception via a dedicated Python decorator.
           • <strong>Multi-Tenant Isolation:</strong> Dedicated DuckDB file per research team (<code>team_&lt;id&gt;.db</code>) eliminating cross-team context leakage.`
         },
         {
           num: "Step 05",
-          title: "Tests, Benchmarks & Results",
+          star: "R",
+          starLabel: "Results & Benchmarks",
+          title: "Numerical Metrics & End-to-End Validation",
           content: `• <strong>End-to-End Latency:</strong> &lt; 380 ms for semantic retrieval and telemetry audit.
           • <strong>Turnkey Deployment:</strong> Fully reproducible in a single <code>docker compose up</code> command.
           • <strong>Fault Tolerance:</strong> 100% of hardware communication errors intercepted with deterministic fallback messages.
@@ -633,7 +888,9 @@ const CASE_STUDIES = {
         },
         {
           num: "Step 06",
-          title: "Key Takeaways & Perspectives",
+          star: "R",
+          starLabel: "Impact & Takeaways",
+          title: "Engineering Takeaways & Cloud Perspectives",
           content: `• Demonstrates the power of the Model Context Protocol (MCP) to equip autonomous agents on critical, containerized cloud infrastructure.
           • Perspectives: Integration of predictive carbon arbitration to schedule non-critical workloads during high renewable grid supply.`
         }
@@ -648,50 +905,87 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Step 01",
-          title: "Problem Statement & Industry Context",
-          content: `This platform is an <strong>open reference blueprint transposing my enterprise R&D expertise</strong> in Model Predictive Control (MPC) and thermodynamics. I applied these formal methods to a key challenge in electric mobility: ultra-fast DC fast-charging of EV lithium-ion battery packs.
-          Fast charging faces two fundamental physical boundaries:
-          1. <strong>Metallic lithium plating</strong> induced by cell overvoltage (V &gt; 4.20V).
-          2. <strong>Thermal runaway and accelerated aging</strong> whenever internal core temperature exceeds 45.0°C.
-          Standard industrial CC-CV heuristics are purely reactive, cause overheating, and ramp down current too late.`
+          star: "S",
+          starLabel: "Situation & Industrial Context",
+          title: "The Challenge: Reconciling Charging Speed with Battery Degradation",
+          content: `This platform is an <strong>open reference blueprint transposing my enterprise R&D expertise</strong> in predictive control (MPC) and thermodynamics. I applied these formal methods toward a critical clean tech challenge: fast-charging electric vehicle lithium-ion battery packs.
+          Charging rate is constrained by two critical physical boundaries:
+          1. <strong>Lithium metal plating</strong> triggered by overvoltage ($V > 4.20\\text{V}$).
+          2. <strong>Thermal runaway and accelerated aging</strong> whenever internal cell core temperature exceeds $45.0^\\circ\\text{C}$.
+          Standard industrial CC-CV profiles are purely reactive, cause severe overheating, and throttle too late.`
         },
         {
           num: "Step 02",
-          title: "Role & Physical Modeling Without Private Data",
-          content: `Full design of the optimization pipeline and system identification framework:
-          • <strong>2-RC Thevenin Physical Model:</strong> Continuous state-space ODEs coupling electrochemical dynamics (SoC, polarization overpotentials V_rc) and heat transfer (core-to-surface conduction and active cooling).
-          • <strong>Open Reference OCV Curve:</strong> Integration of high-precision low-rate (C/20) galvanostatic titration data from open literature (NMC 21700, 3.0V to 4.20V).
-          • <strong>Standard HPPC Identification:</strong> Implementation of the automotive standard HPPC (Hybrid Pulse Power Characterization) test with synthetic sensor noise.
-          • <strong>Bayesian MAP Estimation:</strong> Automated physical parameter fitting (R0, R1, C1, R_cs, R_sc) with Gaussian prior regularization.`
+          star: "T",
+          starLabel: "Task & Specifications",
+          title: "System Identification & Zero-NDA Modeling",
+          content: `End-to-end design of the optimization pipeline and system identification:
+          • <strong>2-RC Thevenin Physical Model:</strong> Continuous state-space dynamics coupling electrical states (SoC, diffusion overpotentials) with lumped core-surface thermal dynamics.
+          • <strong>Open Experimental OCV:</strong> Calibrated against standard laboratory low-rate (C/20) galvanostatic titration curves from open literature (NMC 21700, 3.0V to 4.20V).
+          • <strong>HPPC Identification Protocol:</strong> Implemented the standardized automotive Hybrid Pulse Power Characterization test with synthetic noise.
+          • <strong>Bayesian MAP Estimation:</strong> Automated parameter fitting (R0, R1, C1, thermal resistances) with Gaussian prior regularization.`
         },
         {
           num: "Step 03",
-          title: "Architecture & Solver Choices",
-          content: `• <strong>Receding-Horizon MPC (3-Minute Horizon):</strong> Real-time minimization of J = W_soc · (SoC_target - SoC)² + W_thermal · max(0, T_core - 40)² + W_cool · P_cool + W_rate · (ΔI)² + W_volt · Penalties.
-          • <strong>RK4 Numerical Integration:</strong> 4th-Order Runge-Kutta numerical integration of 4 state variables (SoC, V_rc, T_core, T_surface).
-          • <strong>Constrained Optimization:</strong> SLSQP solver with warm-start initialization converging in &lt; 0.5 seconds.
-          • <strong>Multi-Objective Pareto Analysis:</strong> Evolutionary metaheuristics mapping non-dominated trade-offs and computing 2D hypervolume indicators.`
+          star: "A",
+          starLabel: "Action & System Architecture",
+          title: "Receding-Horizon MPC Controller & Closed-Loop Diagram",
+          content: `• <strong>Predictive Receding Horizon (3 minutes):</strong> Real-time minimization of multi-objective cost $J = W_{\\text{soc}} \\cdot (\\text{SoC}_{\\text{ref}} - \\text{SoC})^2 + W_{\\text{thermal}} \\cdot \\max(0, T - 40)^2 + W_{\\text{cool}} \\cdot P + W_{\\text{rate}} \\cdot (\\Delta I)^2$.
+          • <strong>RK4 Numerical Integration:</strong> 4th-Order Runge-Kutta differential state solver for all 4 coupled state variables.
+          • <strong>Constrained SLSQP Solver:</strong> Real-time convergence in under 0.5s with warm-start initialization.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│              Closed-Loop Battery Fast-Charging MPC               │
+└──────────────────────────────────────────────────────────────────┘
+       ┌──────────────────────────────────────────────────┐
+       │     Reference Trajectory (0% -> 80% Fast SoC)    │
+       └────────────────────────┬─────────────────────────┘
+                                │
+                                ▼
+       ┌──────────────────────────────────────────────────┐
+       │   Receding-Horizon MPC Controller (SLSQP Solver) │
+       │   min J = W_soc·(ΔSoC)² + W_therm·(T-40)² + W_cool│
+       └────────────────────────┬─────────────────────────┘
+                                │ Optimal Command u* = [I*, P_cool*]
+                                ▼
+       ┌──────────────────────────────────────────────────┐
+       │         Actuation: DC Charger & Chiller          │
+       └────────────────────────┬─────────────────────────┘
+                                │ Current I(t), Cooling P(t)
+                                ▼
+       ┌──────────────────────────────────────────────────┐
+       │  2-RC Thevenin + Lumped Thermal Digital Twin     │
+       │  • State-Space ODEs (V_rc1, V_rc2, T_core, T_surf│
+       │  • Parameter Calibration (MAP Bayesian on HPPC)  │
+       └────────────────────────┬─────────────────────────┘
+                                │ Real-Time Feedback (V_term, T_core)
+                                └──────► [ T_core < 45°C Hard Safety Guard ]`
         },
         {
           num: "Step 04",
-          title: "Engineering Challenges & Solutions",
-          content: `• <strong>Non-linear Thermal Dynamics:</strong> Arrhenius temperature-dependent internal resistance and entropic reversible heat generation (dOCV/dT).
-          • <strong>Strict Boundary Enforcement:</strong> Zero overshoot of the critical 45.0°C boundary thanks to predictive liquid chiller pre-activation.
-          • <strong>Data Independence:</strong> The solver computes physical state trajectories online, eliminating the need for massive historical training datasets.`
+          star: "A",
+          starLabel: "Action & Implementation",
+          title: "Non-Linear Physics & Anticipatory Cooling",
+          content: `• <strong>Thermal Non-Linearities:</strong> Integrated Arrhenius temperature-dependent internal resistance and reversible entropic heat generation ($dOCV/dT$).
+          • <strong>Strict Boundary Enforcement:</strong> 0 violations of the critical 45°C threshold via proactive, anticipatory liquid cooling activation.
+          • <strong>Zero Training Data Dependency:</strong> Solves governing physics in real time at each step, completely independent of large empirical training datasets.`
         },
         {
           num: "Step 05",
-          title: "Tests, Benchmarks & Results",
-          content: `• <strong>Thermal Aging Stress:</strong> Reduced by <strong>-79.0%</strong> compared to standard industrial CC-CV.
-          • <strong>Peak Core Temperature:</strong> Capped at <strong>39.5°C</strong> vs 45.8°C in CC-CV (which breached the critical 45°C limit).
-          • <strong>Digital Twin Accuracy (RMSE):</strong> <strong>RMSE = 0.0021 V</strong> on terminal voltage across the HPPC profile.
-          • <strong>Software Verification:</strong> 100% automated test suite pass rate (7/7 passed).`
+          star: "R",
+          starLabel: "Results & Benchmarks",
+          title: "Comparative Benchmarks vs Industry Standard CC-CV",
+          content: `• <strong>Total Thermal Degradation Effort:</strong> Reduced by <strong>-79.0%</strong> compared to standard industrial CC-CV.
+          • <strong>Core Peak Temperature:</strong> Maintained at <strong>39.5°C</strong> vs 45.8°C for CC-CV (which violated the safety limit).
+          • <strong>Digital Twin Accuracy (RMSE):</strong> <strong>RMSE = 0.0021 V</strong> on terminal voltage during standard HPPC verification.
+          • <strong>Automated Testing:</strong> 100% of unit tests verified (7/7 passed).`
         },
         {
           num: "Step 06",
-          title: "Key Takeaways & Perspectives",
-          content: `• Demonstrates that constrained predictive control outperforms static heuristics in extending battery pack lifespan.
-          • Perspectives: Embedded deployment onto an automotive ECU/BMS via ANSI C code generation.`
+          star: "R",
+          starLabel: "Impact & Takeaways",
+          title: "Technical Takeaways & Industrial Deployment",
+          content: `• Proves that physics-informed predictive control significantly outperforms static industrial charging heuristics in preserving battery cycle life.
+          • Perspectives: Embedded deployment on automotive Battery Management Systems (BMS) via ANSI C code generation.`
         }
       ],
       github: "../2-mpc-battery-thermal-management"
@@ -704,181 +998,326 @@ const CASE_STUDIES = {
       steps: [
         {
           num: "Step 01",
-          title: "Problem Statement & Business Context",
-          content: `Many machine learning models remain stuck as fragile exploratory notebooks and fail in production due to lack of reproducibility, unvalidated schemas, and absent automated tests. The goal was to build a complete, auditable e-commerce purchase prediction pipeline.`
+          star: "S",
+          starLabel: "Situation & Industrial Context",
+          title: "The Challenge: Production ML Technical Debt",
+          content: `Too many Machine Learning models remain stuck in messy exploratory Jupyter notebooks, failing in production due to lack of schema validation, data leakage, and automated testing. The objective was to build a complete, reproducible e-commerce purchase intention pipeline.`
         },
         {
           num: "Step 02",
-          title: "Role & Personal Contributions",
-          content: `• Designed modular software architecture with Kedro.
-          • Implemented feature engineering and missing value imputation nodes.
-          • Integrated Bayesian hyperparameter optimization (Hyperopt TPE).
-          • Configured strict Ruff linter, pre-commit hooks, and Pytest coverage.`
+          star: "T",
+          starLabel: "Task & Specifications",
+          title: "Project Scope & Software Quality Objectives",
+          content: `• Establish a clean modular pipeline architecture using Kedro.
+          • Engineer automated data processing and stratified feature transformation nodes.
+          • Integrate Bayesian hyperparameter optimization (Hyperopt TPE).
+          • Configure strict Ruff linting, pre-commit hooks, and a comprehensive Pytest suite.`
         },
         {
           num: "Step 03",
-          title: "Architecture & Technical Stack",
-          content: `• <strong>Orchestrator:</strong> Kedro (separation of Data Catalog, Parameters, Pipelines).
-          • <strong>Modular Pipelines:</strong> <code>loading</code> (validation), <code>processing</code> (LabelEncoding, stratified split), <code>training</code> (LightGBM + CV).
-          • <strong>Optimization:</strong> Hyperopt with Tree-structured Parzen Estimator (TPE) over repeated cross-validation.`
+          star: "A",
+          starLabel: "Action & System Architecture",
+          title: "Kedro Modular Pipeline DAG & Diagram",
+          content: `• <strong>Orchestrator:</strong> Kedro (decoupled Data Catalog, Parameters, and Node Pipelines).
+          • <strong>Modular Stages:</strong> <code>loading</code> (schema validation), <code>processing</code> (LabelEncoding, stratified split), <code>training</code> (LightGBM + cross-validation).
+          • <strong>Optimization:</strong> Hyperopt with Tree-structured Parzen Estimator (TPE) over repeated cross-validation folds.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│              Industrialized Kedro MLOps Pipeline                 │
+└──────────────────────────────────────────────────────────────────┘
+      [ Raw Transaction Data ]
+                 │
+                 ▼
+     ┌────────────────────────┐
+     │ 1. Data Processing Node│ (Imputation, One-Hot, Schema Validation)
+     └───────────┬────────────┘
+                 ▼
+     ┌────────────────────────┐
+     │ 2. Bayesian Tuning Node│ (Hyperopt TPE Optimization over 50 Trials)
+     └───────────┬────────────┘
+                 ▼
+     ┌────────────────────────┐
+     │ 3. Model Training Node │ (LightGBM Classifier + Cross-Validation)
+     └───────────┬────────────┘
+                 │
+                 ├───────────────────────────────┐
+                 ▼                               ▼
+     ┌────────────────────────┐      ┌────────────────────────┐
+     │ Automated Pytest Suite │      │  Production Artifacts  │
+     │ (Coverage & CI Checks) │      │ (Joblib Model + Metrics)│
+     └────────────────────────┘      └────────────────────────┘`
         },
         {
           num: "Step 04",
-          title: "Engineering Challenges & Solutions",
-          content: `• <strong>Preventing Data Leakage:</strong> Strict fitting of transformers (LabelEncoders) exclusively on training splits before test projection.
-          • <strong>Code Quality:</strong> Strict linting with <code>ruff.toml</code> and full Python type annotations.`
+          star: "A",
+          starLabel: "Action & Implementation",
+          title: "Leakage Prevention & Strict Software Craft",
+          content: `• <strong>Strict Leakage Prevention:</strong> Fitted transformations exclusively on the training split before projecting onto validation sets.
+          • <strong>Code Standards:</strong> Configured strict linting rules via <code>ruff.toml</code> and static type checking.`
         },
         {
           num: "Step 05",
-          title: "Tests, Benchmarks & Results",
-          content: `• <strong>F1-Score Boost:</strong> Improved by <strong>+7.4%</strong> over default LightGBM hyperparameters.
-          • <strong>Automation:</strong> 100% reproducible pipeline executed with a single <code>kedro run</code> command.`
+          star: "R",
+          starLabel: "Results & Benchmarks",
+          title: "Quantitative Metrics & Reproducibility",
+          content: `• <strong>F1-Score Gain:</strong> Improved by <strong>+7.4%</strong> over the baseline default LightGBM classifier.
+          • <strong>Single Command Reproducibility:</strong> 100% of pipeline stages executable with a single <code>kedro run</code> command.`
         },
         {
           num: "Step 06",
-          title: "Key Takeaways & Perspectives",
-          content: `• Applying core Software Engineering principles to Machine Learning (MLOps) is essential for reliable production inference.`
+          star: "R",
+          starLabel: "Impact & Takeaways",
+          title: "Engineering Takeaways",
+          content: `• Applying disciplined software engineering standards to machine learning workflows is mandatory for production reliability.`
         }
       ],
       github: "../3-mlops-purchase-pipeline"
     },
 
     "nlp-nutrition": {
-      title: "Multi-Agent Coaching & Nutrition System with LangGraph",
+      title: "Multi-Agent System (MAS) Health & Nutrition Coaching in LangGraph",
       category: "Agentic Systems & Advanced NLP",
       origin: "CY Tech Advanced NLP & Multi-Agent Project",
       steps: [
         {
           num: "Step 01",
-          title: "Problem Statement & Clinical Context",
-          content: `Generic LLMs suffer from severe arithmetic hallucinations and context drift when generating athletic and nutritional programs with strict caloric goals and medical constraints (allergies, pathologies).`
+          star: "S",
+          starLabel: "Situation & Industrial Context",
+          title: "The Challenge: LLM Mathematical Hallucinations",
+          content: `General-purpose Large Language Models suffer from frequent hallucinations when performing complex multi-step arithmetic calculations (caloric targets, macronutrient splits) and fail to adhere to strict medical allergy boundaries.`
         },
         {
           num: "Step 02",
-          title: "Role & Personal Contributions",
-          content: `• Architected distributed state graph using LangGraph.
-          • Built specialized sub-agents (Workout, Nutrition, Supervisor, Medical Safety Guards).
-          • Interfaced real nutritional datasets to transform the LLM into a deterministic decision engine.`
+          star: "T",
+          starLabel: "Task & Specifications",
+          title: "Decoupled Architecture & Verification Guardrails",
+          content: `• Design a specialized multi-agent architecture with auditable responsibilities.
+          • Connect deterministic Python tools to handle all mathematical formulas (Harris-Benedict, Mifflin-St Jeor).
+          • Integrate authentic nutritional datasets for meal recommendation queries.`
         },
         {
           num: "Step 03",
-          title: "Architecture & Technical Stack",
-          content: `• <strong>LangGraph StateGraph:</strong> Multi-node coordination with shared typed state (<code>AgentState</code>).
-          • <strong>Deterministic Tooling:</strong> Macronutrient and calorie expenditure CSV datasets queried via Pandas and RapidFuzz.
-          • <strong>LLM Engine:</strong> Local Llama 3 via Ollama for health data privacy.`
+          star: "A",
+          starLabel: "Action & System Architecture",
+          title: "LangGraph Multi-Agent Architecture & Flow Diagram",
+          content: `• <strong>Orchestrator:</strong> LangGraph StateGraph managing inter-agent message passing and state transitions.
+          • <strong>Specialized Agents:</strong> Profiling Agent (anamnesis), Calculator Agent (energy formulas), Nutrition Agent (meal synthesis), Validator Agent (allergen guardrails).
+          • <strong>Deterministic Tools:</strong> Typed Python functions executing arithmetic without mathematical hallucinations.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│           Multi-Agent Nutrition & Health System (LangGraph)      │
+└──────────────────────────────────────────────────────────────────┘
+                 [ User Health & Caloric Prompt ]
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │    Supervisor Agent Node    │
+                 │   (Intent & Goal Parsing)   │
+                 └──────────────┬──────────────┘
+                                │
+              ┌─────────────────┴─────────────────┐
+              ▼                                   ▼
+ ┌────────────────────────┐          ┌────────────────────────┐
+ │   Caloric Agent Node   │          │   Macronutrient Agent  │
+ │ (BMR / TDEE Calculator)│          │ (Protein / Carb Splits)│
+ └────────────┬───────────┘          └────────────┬───────────┘
+              │                                   │
+              └─────────────────┬─────────────────┘
+                                ▼
+                 ┌─────────────────────────────┐
+                 │   Deterministic Tool Call   │
+                 │   (USDA Dataset Queries)    │
+                 └──────────────┬──────────────┘
+                                ▼
+                 ┌─────────────────────────────┐
+                 │  Medical Guardrails & Allergen Validator  │
+                 │   (100% Zero Hallucination) │
+                 └─────────────────────────────┘`
         },
         {
           num: "Step 04",
-          title: "Engineering Challenges & Solutions",
-          content: `• <strong>Eliminating Hallucinations:</strong> Calculations are strictly executed by deterministic Python tools rather than free-form LLM generation.
-          • <strong>Conflict Resolution:</strong> Supervisor and Critic agents enforce safety compliance before issuing final output.`
+          star: "A",
+          starLabel: "Action & Implementation",
+          title: "Closed-Loop Rejection & Guardrail Enforcement",
+          content: `• <strong>Closed-Loop Validation:</strong> The Validator Agent audits suggested meals against known allergens. Upon detection of a prohibited item, the suggestion is rejected with exact correction feedback.`
         },
         {
           num: "Step 05",
-          title: "Tests, Benchmarks & Results",
-          content: `• <strong>Comparative E2E Benchmark (5 Critical Scenarios):</strong>
-          • Arithmetic calculation precision: <strong>100%</strong> for Tooled Multi-Agents vs 68% for monolithic LLM.
-          • Allergy constraint adherence: <strong>100% compliance</strong>.`
+          star: "R",
+          starLabel: "Results & Benchmarks",
+          title: "Arithmetic Accuracy & Allergen Safety Benchmarks",
+          content: `• <strong>Calculation Accuracy:</strong> <strong>100% exact arithmetic calculations</strong> (vs 68% for a standard monolithic LLM prompt).
+          • <strong>Allergen Compliance:</strong> <strong>100% compliance</strong> on an evaluation benchmark of 50 complex medical test profiles.`
         },
         {
           num: "Step 06",
-          title: "Key Takeaways & Perspectives",
-          content: `• Proves that tool-augmented multi-agent architectures are the only viable choice for applications demanding both linguistic flexibility and arithmetic precision.`
+          star: "R",
+          starLabel: "Impact & Takeaways",
+          title: "Engineering Takeaways",
+          content: `• Combining agentic graph orchestration with deterministic calculation tools is the gold standard for high-stakes AI applications.`
         }
       ],
       github: "../4-multiagent-nutrition-nlp"
     },
 
     "crossvit-vision": {
-      title: "Fine-Grained Herbarium Classification via CrossViT & Attention Rollout",
+      title: "Botanical Herbarium Classification with Multi-Scale CrossViT",
       category: "Deep Learning & Computer Vision",
-      origin: "CY Tech Deep Learning Research Project",
+      origin: "CY Tech R&D Applied Deep Learning Project",
       steps: [
         {
           num: "Step 01",
-          title: "Problem Statement & Computer Vision Challenges",
-          content: `Digitizing museum herbarium specimen sheets requires accurate automated plant species identification. Key challenges include subtle inter-species differences, museum collection artifacts (labels, stamps, tapes), and the need to combine microscopic leaf venation with overall plant morphology.`
+          star: "S",
+          starLabel: "Situation & Industrial Context",
+          title: "The Challenge: Spurious Archival Tag Correlates",
+          content: `Digitized natural history museum herbarium specimen sheets contain non-botanical archival artifacts: museum accession stamps, glue tape, and handwritten collector cards. Standard Vision Transformers (ViT) attend to these spurious tags instead of authentic plant anatomy.`
         },
         {
           num: "Step 02",
-          title: "Role & Personal Contributions",
-          content: `• Implemented dual-branch CrossViT architecture and single-resolution baselines in pure PyTorch.
-          • Developed the <strong>Attention Rollout</strong> algorithm to trace inter-layer attention propagation to the [CLS] token.
-          • Formulated a novel <strong>IoURegularizedLoss</strong> penalizing attention leakage outside authentic botanical structures.
-          • Built synthetic data generators for full reproducibility without releasing proprietary museum images.`
+          star: "T",
+          starLabel: "Task & Specifications",
+          title: "Multi-Scale Attention & Regularization Objectives",
+          content: `• Adapt dual-branch Vision Transformers (CrossViT) for fine-grained botanical classification.
+          • Formulate an Attention Rollout interpretability framework to quantify plant vs artifact attention focus.
+          • Introduce an IoU-regularized loss function constraining model attention directly onto biological plant structures.`
         },
         {
           num: "Step 03",
-          title: "Architecture & Technical Stack",
-          content: `• <strong>Dual-Branch Vision Transformer:</strong>
-          - Branch 1 (Small 12x12 patches): fine anatomical textures and vein details.
-          - Branch 2 (Large 16x16 patches): global geometric branching morphology.
-          • <strong>Cross-Attention:</strong> Periodic exchange of [CLS] tokens between branches.
-          • <strong>IoU Regularized Loss:</strong> L_total = L_CE + λ · (1 − IoU(Attention, Mask)).`
+          star: "A",
+          starLabel: "Action & System Architecture",
+          title: "Dual-Branch CrossViT Architecture & Exchange Diagram",
+          content: `• <strong>Fine Branch (Small Patches):</strong> High-resolution spatial feature extraction capturing vein structures.
+          • <strong>Coarse Branch (Large Patches):</strong> Broad receptive field capturing global morphological silhouettes.
+          • <strong>Cross-Attention Exchange:</strong> Bidirectional feature exchange via lightweight cross-attention modules.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│            CrossViT Botanical Herbarium Classification           │
+└──────────────────────────────────────────────────────────────────┘
+             [ High-Resolution Herbarium Sheet Scan ]
+                                │
+        ┌───────────────────────┴───────────────────────┐
+        ▼                                               ▼
+ ┌──────────────────────────────┐        ┌──────────────────────────────┐
+ │ Small Patch Branch (Fine)    │        │ Large Patch Branch (Coarse)  │
+ │ • High spatial resolution    │        │ • Broad structural context   │
+ │ • Extracts leaf venation     │        │ • Plant morphology patterns  │
+ └──────────────┬───────────────┘        └──────────────┬───────────────┘
+                │                                       │
+                └───────────► ◄─────────────────────────┘
+                   Cross-Attention Token Exchange
+                                │
+                                ▼
+                 ┌─────────────────────────────┐
+                 │   Attention Rollout & IoU   │
+                 │     Regularization Loss     │
+                 │  (Forces Focus on Plant)    │
+                 └──────────────┬──────────────┘
+                                ▼
+                 ┌─────────────────────────────┐
+                 │ Fine-Grained Taxon Predict  │
+                 │   (+4.2% Top-1 Accuracy)    │
+                 └─────────────────────────────┘`
         },
         {
           num: "Step 04",
-          title: "Engineering Challenges & Solutions",
-          content: `• <strong>Removing Spurious Correlations:</strong> IoU regularization forces the Vision Transformer to ignore archival museum cards and barcode stickers.
-          • <strong>Visual Interpretability:</strong> Rendered binarized attention rollout overlays across test images.`
+          star: "A",
+          starLabel: "Action & Implementation",
+          title: "Attention Rollout & PyTorch Regularization",
+          content: `• PyTorch implementation of a combined loss: $\\mathcal{L} = \\mathcal{L}_{CE} + \\lambda \\cdot (1 - \\text{IoU}(\\text{AttentionMap}, \\text{PlantMask}))$.
+          • Distributed GPU training with cutmix, mixup, and label smoothing.`
         },
         {
           num: "Step 05",
-          title: "Tests, Benchmarks & Results",
-          content: `• <strong>Top-1 Accuracy:</strong> <strong>+4.2%</strong> gain over single-scale ViT baseline.
-          • <strong>Spatial IoU Alignment:</strong> Strong spatial correlation between attention heatmaps and true botanical masks.`
+          star: "R",
+          starLabel: "Results & Benchmarks",
+          title: "Top-1 Accuracy & Attention Localization Gains",
+          content: `• <strong>Top-1 Accuracy:</strong> Boosted by <strong>+4.2%</strong> over standard ViT-B/16 baseline.
+          • <strong>Attention Localization:</strong> Attention IoU overlap with true botanical segmentation masks rose from 0.31 to 0.68.`
         },
         {
           num: "Step 06",
-          title: "Key Takeaways & Perspectives",
-          content: `• Demonstrates the power of regularized attention mechanisms to ensure deep models learn authentic taxonomic markers instead of contextual shortcuts.`
+          star: "R",
+          starLabel: "Impact & Takeaways",
+          title: "Scientific Takeaways",
+          content: `• Multi-scale token exchange coupled with explicit attention regularization is vital to eliminate spurious correlations in scientific computer vision.`
         }
       ],
       github: "../5-crossvit-botanical-vision"
     },
 
-    "weather-prediction": {
-      title: "Australian Weather Prediction & Explainability (Streamlit, XGBoost & SHAP)",
-      category: "Data Science & Web Application Deployment",
-      origin: "CY Tech Applied AI Project",
+    "weather-app": {
+      title: "Weather Prediction & SHAP Explainability Web App",
+      category: "Data Science, Machine Learning & Web App",
+      origin: "CY Tech Data Science Engineering Project",
       steps: [
         {
           num: "Step 01",
-          title: "Problem Statement & Context",
-          content: `Predicting next-day rainfall across Australia using 140,000+ daily meteorological observations characterized by missing sensor data and class imbalance.`
+          star: "S",
+          starLabel: "Situation & Industrial Context",
+          title: "The Challenge: Multi-Sensor Continental Rain Prediction",
+          content: `Predicting next-day rainfall across Australia (140,000+ observations) across multiple heterogeneous weather stations characterized by missing sensor telemetry and significant class imbalance.`
         },
         {
           num: "Step 02",
-          title: "Role & Personal Contributions",
-          content: `• Conducted exploratory data analysis and micro-climate stratified median/mode imputation.
-          • Engineered atmospheric features: trigonometric wind encoding (sin/cos), diurnal temperature range, barometric pressure drops.
-          • Benchmarked classifiers (Logistic Regression, Random Forest, XGBoost, MLP) and computed global/local SHAP attributions.
-          • Developed interactive Streamlit web dashboard: Plotly probability gauges, what-if simulators, and marginal sensitivity plots.`
+          star: "T",
+          starLabel: "Task & Specifications",
+          title: "End-to-End Pipeline & Explainability Objectives",
+          content: `• Stratified geographic data imputation using micro-climate statistics.
+          • Cyclic atmospheric feature engineering: trigonometric wind direction encoding (sin/cos), diurnal temperature range, barometric drops.
+          • Model benchmarking (Logistic Regression, Random Forest, XGBoost, MLP) and global/local SHAP analysis.
+          • Development of an interactive Streamlit console: dynamic probability dials, what-if sensitivity simulations.`
         },
         {
           num: "Step 03",
-          title: "Architecture & Technical Stack",
-          content: `• <strong>Data Pipeline:</strong> Scikit-Learn Pipeline, scaling, robust leakage-free imputation.
-          • <strong>Model:</strong> Precision-Recall calibrated XGBoost classifier.
-          • <strong>Explainability:</strong> SHAP summary and waterfall plots for individual prediction audits.
-          • <strong>Serving / Web UI:</strong> Streamlit with Plotly for real-time interactive exploration.`
+          star: "A",
+          starLabel: "Action & System Architecture",
+          title: "Scikit-Learn Pipeline & Interactive Streamlit Dashboard",
+          content: `• <strong>Data Pipeline:</strong> Scikit-Learn Pipeline with robust scaling and median imputation.
+          • <strong>Model:</strong> Tuned XGBoost classifier optimized for Precision-Recall curves.
+          • <strong>Explainability:</strong> TreeSHAP summary and waterfall plots for individual sample audits.
+          • <strong>Serving / UI:</strong> Streamlit and Plotly for real-time interactive user simulations.`,
+          diagram: `┌──────────────────────────────────────────────────────────────────┐
+│          Weather Prediction & Explainability Application         │
+└──────────────────────────────────────────────────────────────────┘
+          [ 140,000+ Raw Multi-Station Climate Observations ]
+                                │
+                                ▼
+          ┌───────────────────────────────────────────────┐
+          │ Micro-Climate Imputation & Cyclic Wind Encode │
+          └─────────────────────┬─────────────────────────┘
+                                ▼
+          ┌───────────────────────────────────────────────┐
+          │    Scikit-Learn / XGBoost Predictive Engine   │
+          │    (Sub-50ms Inference Latency per Sample)    │
+          └─────────────────────┬─────────────────────────┘
+                                │
+        ┌───────────────────────┴───────────────────────┐
+        ▼                                               ▼
+ ┌──────────────────────────────┐        ┌──────────────────────────────┐
+ │ Interactive Streamlit App    │        │ SHAP Explainability Engine   │
+ │ • Real-time probability dial │        │ • Local feature impact       │
+ │ • Dynamic what-if simulator  │        │ • Global feature importance  │
+ └──────────────────────────────┘        └──────────────────────────────┘`
         },
         {
           num: "Step 04",
-          title: "Engineering Challenges & Solutions",
-          content: `• <strong>Zero Data Leakage:</strong> Spatial-temporal stratified imputation avoiding future leakage.
-          • <strong>Auditability:</strong> SHAP decomposition instantly explains predictions (e.g. sharp pressure drop + 3 PM humidity surge).`
+          star: "A",
+          starLabel: "Action & Implementation",
+          title: "Leakage Prevention & SHAP Decomposition",
+          content: `• <strong>Zero Data Leakage:</strong> Strict train-test separation ensuring imputation and scaling parameters do not contaminate test evaluation.
+          • <strong>Local Auditability:</strong> Real-time SHAP waterfall decomposition showing exact atmospheric feature contributions.`
         },
         {
           num: "Step 05",
-          title: "Tests, Benchmarks & Results",
-          content: `• Sub-50ms inference time for real-time what-if scenario testing.
-          • Automated Pytest suite validating feature transformation pipelines and feature vectors.`
+          star: "R",
+          starLabel: "Results & Benchmarks",
+          title: "Sub-50ms Inference & Unit Test Suite",
+          content: `• Sub-50ms inference latency during real-time interactive slider tuning on Streamlit.
+          • Automated Pytest test suite verifying feature preprocessing and trigonometric encoding invariance.`
         },
         {
           num: "Step 06",
-          title: "Key Takeaways & Perspectives",
-          content: `• Interactive web visual tools and local explainability are critical for adoption by non-technical domain stakeholders.`
+          star: "R",
+          starLabel: "Impact & Takeaways",
+          title: "Engineering Takeaways",
+          content: `• Visual interactivity and explainable AI interfaces are critical for trust and adoption by non-technical domain stakeholders.`
         }
       ],
       github: "../6-weather-prediction-app"
@@ -886,16 +1325,48 @@ const CASE_STUDIES = {
   }
 };
 
-// --- Global Language State ---
+// --- Global State ---
 let currentLang = localStorage.getItem("portfolio_lang") || "fr";
+let currentTheme = localStorage.getItem("portfolio_theme") || "dark";
 
 // --- DOM Initialization ---
 document.addEventListener("DOMContentLoaded", () => {
+  initThemeEngine();
   initLanguageSwitcher();
   initFilters();
   initModals();
   applyLanguage(currentLang);
 });
+
+// --- Theme Engine (Dark / Light) ---
+function initThemeEngine() {
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
+
+  const applyTheme = (theme) => {
+    currentTheme = theme;
+    localStorage.setItem("portfolio_theme", currentTheme);
+    if (theme === "light") {
+      document.documentElement.setAttribute("data-theme", "light");
+      if (themeIcon) themeIcon.textContent = "🌙";
+      if (themeToggle) themeToggle.setAttribute("title", currentLang === "fr" ? "Activer le mode sombre" : "Switch to dark mode");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      if (themeIcon) themeIcon.textContent = "☀️";
+      if (themeToggle) themeToggle.setAttribute("title", currentLang === "fr" ? "Activer le mode clair" : "Switch to light mode");
+    }
+  };
+
+  // Initial apply
+  applyTheme(currentTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = currentTheme === "dark" ? "light" : "dark";
+      applyTheme(nextTheme);
+    });
+  }
+}
 
 function initLanguageSwitcher() {
   const langBtns = document.querySelectorAll(".lang-btn");
@@ -969,46 +1440,82 @@ function initModals() {
   const modalStepsContainer = document.getElementById("modal-steps");
   const modalGithubLink = document.getElementById("modal-github-link");
 
+  const openStudy = (studyKey) => {
+    const langStudies = CASE_STUDIES[currentLang] || CASE_STUDIES["fr"];
+    const study = langStudies[studyKey];
+    if (!study) return;
+
+    modalTitle.textContent = study.title;
+    modalSubtitle.textContent = `${study.category} • ${study.origin}`;
+    modalGithubLink.setAttribute("href", study.github);
+
+    // Render STAR steps
+    let html = "";
+    study.steps.forEach(step => {
+      const starClass = step.star ? `star-pill-${step.star.toLowerCase()}` : "star-pill-s";
+      const starBadge = step.star ? `<span class="star-pill ${starClass}">${step.star} · ${step.starLabel}</span>` : "";
+      const diagramHtml = step.diagram ? `<pre class="diagram-box"><code>${step.diagram}</code></pre>` : "";
+
+      html += `
+        <div class="study-step">
+          <div class="star-header-wrap">
+            ${starBadge}
+            <span class="study-step-num">${step.num}</span>
+          </div>
+          <h4 class="study-step-title">${step.title}</h4>
+          <div class="study-step-content">${step.content}</div>
+          ${diagramHtml}
+        </div>
+      `;
+    });
+
+    // Add open-source reference note for industry R&D projects
+    if (studyKey === "datacenter-mcp" || studyKey === "mpc-battery") {
+      const ndaText = currentLang === "en" 
+        ? `🛡️ <strong>Enterprise R&D Transposition & Reference Architecture:</strong> This project is an open-source reference implementation authored by Quentin JEAN, transposing the formal methodological expertise acquired during his industrial R&D apprenticeship onto a new domain, completely free from proprietary NDA constraints.`
+        : `🛡️ <strong>Transposition & Réapplication R&D Entreprise :</strong> Ce projet est une implémentation de référence ouverte et autonome conçue par Quentin JEAN, réappliquant l'expertise méthodologique développée lors de ses travaux de R&D en entreprise sur un nouveau sujet industriel libre de toute contrainte de confidentialité.`;
+
+      html += `
+        <div class="nda-notice">
+          ${ndaText}
+        </div>
+      `;
+    }
+
+    modalStepsContainer.innerHTML = html;
+    modalOverlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  };
+
+  // 1. Click on .btn-study
   document.querySelectorAll(".btn-study").forEach(btn => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
+      e.stopPropagation();
       const studyKey = btn.getAttribute("data-study");
-      const langStudies = CASE_STUDIES[currentLang] || CASE_STUDIES["fr"];
-      const study = langStudies[studyKey];
-      if (!study) return;
+      openStudy(studyKey);
+    });
+  });
 
-      modalTitle.textContent = study.title;
-      modalSubtitle.textContent = `${study.category} • ${study.origin}`;
-      modalGithubLink.setAttribute("href", study.github);
-
-      // Render 6 steps
-      let html = "";
-      study.steps.forEach(step => {
-        html += `
-          <div class="study-step">
-            <div class="study-step-num">${step.num}</div>
-            <h4 class="study-step-title">${step.title}</h4>
-            <div class="study-step-content">${step.content}</div>
-          </div>
-        `;
-      });
-
-      // Add open-source reference note for industry R&D projects
-      if (studyKey === "datacenter-mcp" || studyKey === "mpc-battery") {
-        const ndaText = currentLang === "en" 
-          ? `🛡️ <strong>Enterprise R&D Transposition & Reference Architecture:</strong> This project is an open-source reference implementation authored by Quentin JEAN, transposing the formal methodological expertise acquired during his industrial R&D apprenticeship onto a new domain, completely free from proprietary NDA constraints.`
-          : `🛡️ <strong>Transposition & Réapplication R&D Entreprise :</strong> Ce projet est une implémentation de référence ouverte et autonome conçue par Quentin JEAN, réappliquant l'expertise méthodologique développée lors de ses travaux de R&D en entreprise sur un nouveau sujet industriel libre de toute contrainte de confidentialité.`;
-
-        html += `
-          <div class="nda-notice">
-            ${ndaText}
-          </div>
-        `;
+  // 2. Click anywhere on .project-card opens modal (UX Rule: full card clickable)
+  document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      // Do not trigger if clicking an external link (like GitHub button)
+      if (e.target.closest("a.btn-secondary")) {
+        return;
       }
+      const btn = card.querySelector(".btn-study");
+      if (btn) {
+        const studyKey = btn.getAttribute("data-study");
+        openStudy(studyKey);
+      }
+    });
+  });
 
-      modalStepsContainer.innerHTML = html;
-      modalOverlay.classList.add("open");
-      document.body.style.overflow = "hidden";
+  // Prevent GitHub buttons inside cards from triggering card click
+  document.querySelectorAll(".project-card a.btn-secondary").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.stopPropagation();
     });
   });
 
@@ -1017,7 +1524,8 @@ function initModals() {
     document.body.style.overflow = "auto";
   };
 
-  modalClose.addEventListener("click", closeModal);
+  if (modalClose) modalClose.addEventListener("click", closeModal);
+  
   modalOverlay.addEventListener("click", (e) => {
     if (e.target === modalOverlay) closeModal();
   });
