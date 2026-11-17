@@ -98,7 +98,7 @@ const I18N = {
     career_title: "Parcours Académique & Industriel",
     
     exp1_date: "Sept. 2025 — Sept. 2026",
-    exp1_role: "Apprenti Ingénieur R&D IA, Systèmes & Déploiement Web",
+    exp1_role: "Ingénieur de Recherche en Alternance (IA, Systèmes & Déploiement Web)",
     exp1_company: "Vestaclim & Laboratoire CEEP (ARMINES — Mines Paris) • Paris",
     exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC sous Linux embarqué (Raspberry Pi 5) : découplage strict entre la boucle rapide de contrôle machine (100% autonome et déterministe) et l'agent cognitif distant, interdisant toute altération non vérifiée des registres physiques.",
     exp1_li2: "Développement de l'interface de pilotage et du pont web applicatif : gestion sécurisée de l'authentification avec renouvellement automatique des tokens (JWT), résilience de la télémétrie InfluxDB (détection des capteurs défaillants avec passage en mode dégradé si la donnée est trop ancienne) et persistance PostgreSQL robuste lors des changements de modèles d'embeddings.",
