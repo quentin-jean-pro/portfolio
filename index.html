@@ -50,116 +50,58 @@
   <!-- ==================== HERO SECTION ==================== -->
   <header class="hero">
     <div class="container">
-      <div class="hero-grid">
-        <!-- Colonne Gauche : Pitch & Stack -->
-        <div class="hero-content">
-          <div class="hero-pill">
-            <span class="hero-pill-dot"></span>
-            <span data-i18n="hero_pill">Disponible pour opportunités AI Engineer / MLOps / R&D</span>
-          </div>
-          <h1 class="hero-title" data-i18n="hero_title">
-            Building intelligent systems that solve <span class="gradient-text">real-world problems</span>.
-          </h1>
-          <p class="hero-subtitle" data-i18n="hero_subtitle">
-            Ingénieur en Intelligence Artificielle spécialisé dans le couplage entre 
-            <strong>Systèmes Agentiques (MCP, LangGraph)</strong>, 
-            <strong>Contrôle Prédictif (MPC)</strong> et 
-            <strong>Déploiement d'Applications Web & MLOps</strong>. Fort de mon expérience R&D en entreprise sur les architectures de contrôle, les agents autonomes et les systèmes temps réel, j'ai réappliqué et généralisé ces compétences de pointe sur de nouveaux cas d'usage industriels (Data Center IA et Mobilité Électrique) afin de proposer des implémentations de référence 100% open-source, robustes et libres de tout risque de secret de fabrique.
-          </p>
-          
-          <div class="hero-stack">
-            <span class="tech-tag">Python 3.11+</span>
-            <span class="tech-tag">Model Context Protocol (MCP)</span>
-            <span class="tech-tag">LangGraph</span>
-            <span class="tech-tag">Contrôle Prédictif (MPC)</span>
-            <span class="tech-tag">Déploiement Web & Docker</span>
-            <span class="tech-tag">MLOps (Kedro)</span>
-            <span class="tech-tag">PyTorch & Transformers</span>
-            <span class="tech-tag">DuckDB Vector</span>
-            <span class="tech-tag">InfluxDB & Telemetry</span>
-          </div>
-
-          <div class="hero-cta">
-            <a href="#projets" class="btn btn-primary" data-i18n="hero_cta_projects">Explorer les Études de Cas ↓</a>
-            <a href="https://github.com/quentin-jean-pro" target="_blank" class="btn btn-secondary" data-i18n="hero_cta_github">
-              <span>Voir mon GitHub</span>
-              <span>↗</span>
-            </a>
-          </div>
-
-          <!-- Stats Bar -->
-          <div class="stats-bar">
-            <div class="stat-item">
-              <div class="stat-number" data-i18n="stat_transposition_num">2</div>
-              <div class="stat-label" data-i18n="stat_transposition_label">Transpositions R&D Entreprise</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-i18n="stat_engineering_num">4</div>
-              <div class="stat-label" data-i18n="stat_engineering_label">Projets Ingénierie & École</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-i18n="stat_reproducible_num">100%</div>
-              <div class="stat-label" data-i18n="stat_reproducible_label">Code Reproductible & Testé</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-i18n="stat_nda_num">0%</div>
-              <div class="stat-label" data-i18n="stat_nda_label">Risque NDA (Code Open-Source)</div>
-            </div>
-          </div>
+      <div class="hero-content hero-centered">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span data-i18n="hero_pill">Disponible pour opportunités AI Engineer / MLOps / R&D</span>
+        </div>
+        <h1 class="hero-title" data-i18n="hero_title">
+          Building intelligent systems that solve <span class="gradient-text">real-world problems</span>.
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Ingénieur en Intelligence Artificielle spécialisé dans le couplage entre 
+          <strong>Systèmes Agentiques (MCP, LangGraph)</strong>, 
+          <strong>Contrôle Prédictif (MPC)</strong> et 
+          <strong>Déploiement d'Applications Web & MLOps</strong>. Fort de mon expérience R&D en entreprise sur les architectures de contrôle et les agents autonomes, je conçois des systèmes d'IA robustes, testés et déployables en production.
+        </p>
+        
+        <div class="hero-stack">
+          <span class="tech-tag">Python 3.11+</span>
+          <span class="tech-tag">Model Context Protocol (MCP)</span>
+          <span class="tech-tag">LangGraph</span>
+          <span class="tech-tag">Contrôle Prédictif (MPC)</span>
+          <span class="tech-tag">Déploiement Web & Docker</span>
+          <span class="tech-tag">MLOps (Kedro)</span>
+          <span class="tech-tag">PyTorch & Transformers</span>
+          <span class="tech-tag">DuckDB Vector</span>
+          <span class="tech-tag">InfluxDB & Telemetry</span>
         </div>
 
-        <!-- Colonne Droite : Console Télémétrie & Architecture (Zero-NDA) -->
-        <div class="hero-visual">
-          <div class="hero-telemetry-card">
-            <div class="telemetry-header">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="telemetry-title">quentin@station: ~/ai-systems</div>
-              <span class="telemetry-badge">LIVE STATUS</span>
-            </div>
-            <div class="telemetry-body">
-              <div class="telemetry-line">
-                <span class="telemetry-key">SYSTEM_CORE:</span>
-                <span class="telemetry-val text-green">● OPERATIONAL (PROD-READY)</span>
-              </div>
-              <div class="telemetry-line">
-                <span class="telemetry-key">FASTMCP_CLUSTER:</span>
-                <span class="telemetry-val text-indigo">PORTS 8001 / 8002 [SSE TRANSPORT]</span>
-              </div>
-              <div class="telemetry-line">
-                <span class="telemetry-key">MPC_CONTROLLER:</span>
-                <span class="telemetry-val text-amber">SLSQP &lt; 45ms [T &lt; 45°C SAFE]</span>
-              </div>
-              <div class="telemetry-line">
-                <span class="telemetry-key">MLOPS_PIPELINE:</span>
-                <span class="telemetry-val text-cyan">KEDRO DAG [PYTEST 100% PASS]</span>
-              </div>
-              
-              <div class="telemetry-divider"></div>
+        <div class="hero-cta">
+          <a href="#projets" class="btn btn-primary" data-i18n="hero_cta_projects">Explorer les Études de Cas ↓</a>
+          <a href="https://github.com/quentin-jean-pro" target="_blank" class="btn btn-secondary" data-i18n="hero_cta_github">
+            <span>Voir mon GitHub</span>
+            <span>↗</span>
+          </a>
+        </div>
 
-              <div class="telemetry-metrics-grid">
-                <div class="telemetry-metric-item">
-                  <span class="metric-val">2</span>
-                  <span class="metric-lbl" data-i18n="card_stat_trans">Transpositions R&D</span>
-                </div>
-                <div class="telemetry-metric-item">
-                  <span class="metric-val">100%</span>
-                  <span class="metric-lbl" data-i18n="card_stat_open">Open-Source</span>
-                </div>
-                <div class="telemetry-metric-item">
-                  <span class="metric-val">0%</span>
-                  <span class="metric-lbl" data-i18n="card_stat_nda">Risque NDA</span>
-                </div>
-              </div>
-
-              <div class="telemetry-console">
-                <span class="console-prompt">$</span> git status<br>
-                <span class="console-out">On branch main: all 8 reference repositories synced &amp; tested. Zero proprietary leaks.</span>
-              </div>
-            </div>
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-number">6</div>
+            <div class="stat-label" data-i18n="stat_projects_label">Projets Clés Documentés</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label" data-i18n="stat_repos_label">Dépôts GitHub Publics</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label" data-i18n="stat_reproducible_label">Code Reproductible & Testé</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2+ ans</div>
+            <div class="stat-label" data-i18n="stat_exp_label">Expérience R&D & Systèmes</div>
           </div>
         </div>
       </div>
@@ -386,27 +328,27 @@
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-        <div style="background: var(--bg-card); padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-          <div style="font-size: 1.8rem; margin-bottom: 12px;">🛡️</div>
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 8px;" data-i18n="m1_title">Conception Cyber-Physique Sûre & Déploiement Web</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;" data-i18n="m1_desc">
+      <div class="method-grid">
+        <div class="method-card">
+          <div class="method-icon">🛡️</div>
+          <h3 class="method-title" data-i18n="m1_title">Conception Cyber-Physique Sûre & Déploiement Web</h3>
+          <p class="method-desc" data-i18n="m1_desc">
             Séparation étanche entre les boucles de contrôle rapide (automates, sécurité matérielle) et l'intelligence agentique lente. Architecture logicielle événementielle temps réel, tableaux de bord de télémétrie et déploiement d'applications conteneurisées.
           </p>
         </div>
 
-        <div style="background: var(--bg-card); padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-          <div style="font-size: 1.8rem; margin-bottom: 12px;">📐</div>
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 8px;" data-i18n="m2_title">IA Hybride & Modélisation Physique</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;" data-i18n="m2_desc">
+        <div class="method-card">
+          <div class="method-icon">📐</div>
+          <h3 class="method-title" data-i18n="m2_title">IA Hybride & Modélisation Physique</h3>
+          <p class="method-desc" data-i18n="m2_desc">
             Enrichissement des modèles physiques (thermodynamique continue, aéraulique) par des algorithmes d'apprentissage automatique, recalage d'état par Filtre de Kalman et optimisation multivariable sous contraintes réelles.
           </p>
         </div>
 
-        <div style="background: var(--bg-card); padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-          <div style="font-size: 1.8rem; margin-bottom: 12px;">⚙️</div>
-          <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 8px;" data-i18n="m3_title">Standardisation Software & MLOps</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem;" data-i18n="m3_desc">
+        <div class="method-card">
+          <div class="method-icon">⚙️</div>
+          <h3 class="method-title" data-i18n="m3_title">Standardisation Software & MLOps</h3>
+          <p class="method-desc" data-i18n="m3_desc">
             Pipelines modulaires (Kedro), typage strict Pydantic V2, validation de schémas, tests unitaires automatisés (Pytest), intégration continue CI/CD et packaging Docker prêt pour la production.
           </p>
         </div>
@@ -502,7 +444,7 @@
   <!-- ==================== FOOTER & CONTACT ==================== -->
   <footer class="footer" id="contact">
     <div class="container">
-      <h2 style="color: #fff; font-size: 1.8rem; margin-bottom: 16px;" data-i18n="footer_title">Prêt à collaborer sur vos défis IA & Systèmes ?</h2>
+      <h2 class="footer-title" style="font-size: 1.8rem; margin-bottom: 16px;" data-i18n="footer_title">Prêt à collaborer sur vos défis IA & Systèmes ?</h2>
       <p style="max-width: 600px; margin: 0 auto 30px auto; color: var(--text-muted);" data-i18n="footer_desc">
         Qu'il s'agisse d'architectures agentiques MCP, de déploiement d'applications web temps réel, d'industrialisation MLOps ou de modélisation prédictive sous contraintes, échangeons sur vos enjeux.
       </p>

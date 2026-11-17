@@ -20,24 +20,15 @@ const I18N = {
     hero_subtitle: `Ingénieur en Intelligence Artificielle spécialisé dans le couplage entre 
       <strong>Systèmes Agentiques (MCP, LangGraph)</strong>, 
       <strong>Contrôle Prédictif (MPC)</strong> et 
-      <strong>Déploiement d'Applications Web & MLOps</strong>. Fort de mon expérience R&D en entreprise sur les architectures de contrôle, les agents autonomes et les systèmes temps réel, j'ai transposé ces compétences de pointe sur de nouveaux cas d'usage industriels (Data Center IA et Mobilité Électrique) afin de proposer des implémentations de référence 100% open-source, robustes et libres de tout risque de secret de fabrique.`,
+      <strong>Déploiement d'Applications Web & MLOps</strong>. Fort de mon expérience R&D en entreprise sur les architectures de contrôle et les agents autonomes, je conçois des systèmes d'IA robustes, testés et déployables en production.`,
     hero_cta_projects: "Explorer les Études de Cas ↓",
     hero_cta_github: "Voir mon GitHub ↗",
     
     // Stats
-    stat_transposition_num: "2",
-    stat_transposition_label: "Transpositions R&D Entreprise",
-    stat_engineering_num: "4",
-    stat_engineering_label: "Projets Ingénierie & École",
-    stat_reproducible_num: "100%",
+    stat_projects_label: "Projets Clés Documentés",
+    stat_repos_label: "Dépôts GitHub Publics",
     stat_reproducible_label: "Code Reproductible & Testé",
-    stat_nda_num: "0%",
-    stat_nda_label: "Risque NDA (Code Open-Source)",
-
-    // Card Stats
-    card_stat_trans: "Transpositions R&D",
-    card_stat_open: "Open-Source",
-    card_stat_nda: "Risque NDA",
+    stat_exp_label: "Expérience R&D & Systèmes",
 
     // Section Projets
     projects_tag: "Réalisations Concrètes",
@@ -162,24 +153,15 @@ const I18N = {
     hero_subtitle: `Artificial Intelligence Engineer specializing in the convergence of 
       <strong>Agentic Systems (MCP, LangGraph)</strong>, 
       <strong>Model Predictive Control (MPC)</strong>, and 
-      <strong>Web Application Deployment & MLOps</strong>. Leveraging my enterprise R&D experience in control architectures, autonomous agents, and real-time systems, I transposed and generalized these competencies onto new industrial domains (AI Data Centers and Electric Mobility) to provide 100% open-source, robust reference blueprints free from trade secret constraints.`,
+      <strong>Web Application Deployment & MLOps</strong>. Leveraging my enterprise R&D experience in control architectures and autonomous agents, I build robust, tested, and production-grade AI systems.`,
     hero_cta_projects: "Explore Case Studies ↓",
     hero_cta_github: "View my GitHub ↗",
     
     // Stats
-    stat_transposition_num: "2",
-    stat_transposition_label: "Enterprise R&D Blueprints",
-    stat_engineering_num: "4",
-    stat_engineering_label: "Core Engineering Projects",
-    stat_reproducible_num: "100%",
-    stat_reproducible_label: "Reproducible & Tested Code",
-    stat_nda_num: "0%",
-    stat_nda_label: "NDA Risk (100% Open-Source)",
-
-    // Card Stats
-    card_stat_trans: "R&D Blueprints",
-    card_stat_open: "Open-Source",
-    card_stat_nda: "NDA Risk",
+    stat_projects_label: "Flagship Projects Documented",
+    stat_repos_label: "Public GitHub Repositories",
+    stat_reproducible_label: "Tested & Reproducible Code",
+    stat_exp_label: "R&D & Systems Experience",
 
     // Section Projets
     projects_tag: "Technical Showcase",
@@ -1472,8 +1454,8 @@ function initModals() {
     // Add open-source reference note for industry R&D projects
     if (studyKey === "datacenter-mcp" || studyKey === "mpc-battery") {
       const ndaText = currentLang === "en" 
-        ? `🛡️ <strong>Enterprise R&D Transposition & Reference Architecture:</strong> This project is an open-source reference implementation authored by Quentin JEAN, transposing the formal methodological expertise acquired during his industrial R&D apprenticeship onto a new domain, completely free from proprietary NDA constraints.`
-        : `🛡️ <strong>Transposition & Réapplication R&D Entreprise :</strong> Ce projet est une implémentation de référence ouverte et autonome conçue par Quentin JEAN, réappliquant l'expertise méthodologique développée lors de ses travaux de R&D en entreprise sur un nouveau sujet industriel libre de toute contrainte de confidentialité.`;
+        ? `💡 <strong>Open Reference Implementation:</strong> I designed and implemented this open-source architecture to showcase and apply my R&D background (agentic systems, predictive control) on public, reproducible engineering problems.`
+        : `💡 <strong>Projet de Référence Open-Source :</strong> J'ai conçu et développé cette architecture ouverte pour valoriser et mettre en pratique mes compétences R&D (systèmes agentiques, contrôle prédictif) sur des cas d'usage publics et reproductibles.`;
 
       html += `
         <div class="nda-notice">
