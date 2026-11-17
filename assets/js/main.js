@@ -103,7 +103,7 @@ const I18N = {
     exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC sous Linux embarqué (Raspberry Pi 5) : découplage strict entre la boucle rapide de contrôle machine (100% autonome et déterministe) et l'agent cognitif distant, interdisant toute altération non vérifiée des registres physiques.",
     exp1_li2: "Développement de l'interface de pilotage et du pont web applicatif : gestion sécurisée de l'authentification avec renouvellement automatique des tokens (JWT), résilience de la télémétrie InfluxDB (détection des capteurs défaillants avec passage en mode dégradé si la donnée est trop ancienne) et persistance PostgreSQL robuste lors des changements de modèles d'embeddings.",
     exp1_li3: "Modélisation physique compacte (modèles entraînés hors cible, inférence et solveur différentiable 2C4R sous PyTorch adaptés aux capacités de calcul de l'embarqué), recalage par Filtre de Kalman et coordination hebdomadaire avec Mines Paris.",
-    exp1_li4: "Validation des livrables par la direction technique et obtention des financements pour la thèse de doctorat issue du projet.",
+    exp1_li4: "Établissement d'un état de l'art scientifique approfondi sur le contrôle prédictif et l'IA cyber-physique : validation des livrables par la direction technique et Mines Paris, récompensée par l'obtention des financements pour la thèse de doctorat issue du projet.",
 
     exp2_date: "Juin 2024 — Août 2024",
     exp2_role: "Stagiaire Ingénieur Cybersécurité",
@@ -237,7 +237,7 @@ const I18N = {
     exp1_li1: "Designed and deployed a FastMCP agentic architecture and receding-horizon MPC controller on embedded Linux (Raspberry Pi 5): enforced a strict boundary decoupling the autonomous deterministic control loop from high-level distant agent requests, prohibiting unverified register writes.",
     exp1_li2: "Architected the web supervision bridge and real-time event pipeline: resilient InfluxDB telemetry handling dropped packets with safety fallback when sensor data goes stale, automated JWT token refresh, and robust PostgreSQL migrations across embedding model changes.",
     exp1_li3: "Formulated compact physics-informed representations (models trained offline, lightweight differentiable 2C4R inference in PyTorch on the edge device), Kalman state filtering, and scientific collaboration with Mines Paris researchers.",
-    exp1_li4: "Software deliverables praised by executive leadership, directly securing the doctoral research grant in partnership with Mines Paris.",
+    exp1_li4: "Authored an exhaustive scientific state-of-the-art review on cyber-physical AI and predictive control: validated by technical leadership and Mines Paris, successfully securing full doctoral research funding (PhD grant) for the project.",
 
     exp2_date: "June 2024 — Aug. 2024",
     exp2_role: "Cybersecurity Engineering Intern",
