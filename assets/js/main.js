@@ -99,9 +99,9 @@ const I18N = {
     exp1_date: "Sept. 2025 — Sept. 2026",
     exp1_role: "Apprenti Ingénieur R&D IA, Systèmes & Déploiement Web",
     exp1_company: "Vestaclim & Laboratoire CEEP (ARMINES — Mines Paris) • Paris",
-    exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC à horizon fuyant sur Raspberry Pi 5 sous Linux.",
-    exp1_li2: "Développement d'interfaces de pilotage et d'architectures logicielles événementielles temps réel : synchronisation basse latence des consignes sans scrutation continue, persistance hybride (séries temporelles et données relationnelles) et dashboards de supervision.",
-    exp1_li3: "Formulation d'un modèle thermodynamique 2C4R différentiable sous PyTorch (torch.nn.Module), recalage d'état par Filtre de Kalman et coordination scientifique hebdomadaire avec les chercheurs de Mines Paris.",
+    exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC sous Linux embarqué (Raspberry Pi 5) : séparation étanche entre l'agent cognitif et les automates pour garantir l'intégrité matérielle de la machine.",
+    exp1_li2: "Développement de l'interface de pilotage et du pont web applicatif : gestion sécurisée de l'authentification avec rafraîchissement automatique des tokens (JWT), résilience de la télémétrie InfluxDB face aux coupures capteurs et persistance hybride sans scrutation énergivore.",
+    exp1_li3: "Modélisation physique compacte (PINN / formulation 2C4R différentiable sous PyTorch) calibrée pour l'inférence temps réel, recalage stochastique par Filtre de Kalman et coordination hebdomadaire avec Mines Paris.",
     exp1_li4: "Validation des livrables par la direction technique et obtention des financements pour la thèse de doctorat issue du projet.",
 
     exp2_date: "Juin 2024 — Août 2024",
@@ -232,9 +232,9 @@ const I18N = {
     exp1_date: "Sept. 2025 — Sept. 2026",
     exp1_role: "R&D AI, Systems & Web Deployment Engineer Apprentice",
     exp1_company: "Vestaclim & CEEP Laboratory (ARMINES — Mines Paris) • Paris",
-    exp1_li1: "Designed and deployed an end-to-end FastMCP agentic architecture and receding-horizon MPC controller on Raspberry Pi 5 under Linux.",
-    exp1_li2: "Architected event-driven control interfaces: low-latency setpoint synchronization without polling, hybrid persistence (time-series telemetry and relational data), and operational dashboards.",
-    exp1_li3: "Formulated a differentiable 2C4R thermal model in PyTorch (torch.nn.Module), Kalman state filtering, and weekly scientific coordination with Mines Paris researchers.",
+    exp1_li1: "Designed and deployed a FastMCP agentic architecture and receding-horizon MPC controller on embedded Linux (Raspberry Pi 5): enforced a strict logical air-gap between cognitive agents and physical machine actuation.",
+    exp1_li2: "Architected the web supervision bridge and real-time event pipeline: resilient InfluxDB telemetry handling sensor dropouts, automated JWT token refresh authentication, and hybrid low-latency persistence.",
+    exp1_li3: "Formulated compact physics-informed neural representations (differentiable 2C4R model in PyTorch) optimized for real-time edge execution, Kalman state filtering, and scientific collaboration with Mines Paris researchers.",
     exp1_li4: "Software deliverables praised by executive leadership, directly securing the doctoral research grant in partnership with Mines Paris.",
 
     exp2_date: "June 2024 — Aug. 2024",
@@ -336,10 +336,11 @@ const CASE_STUDIES = {
           num: "Étape 04",
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
-          title: "Garde-Fous Matériels & Contrats d'Interface",
-          content: `• <strong>Résilience Cyber-Physique :</strong> Implémentation d'un contrat d'interface JSON strict et immuable (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) garantissant zéro plantage client.
-          • <strong>Protection Matérielle & Décorateur de Sécurité :</strong> Clamping automatique de la puissance GPU et coupure thermique d'urgence dès que la température dépasse 80.0°C, interceptant toute panne matérielle via un décorateur Python robuste.
-          • <strong>Isolation Multi-Tenant :</strong> Base de données DuckDB dédiée par équipe de recherche (<code>team_&lt;id&gt;.db</code>) supprimant tout risque de fuite de contexte.`
+          title: "Garde-Fous Matériels, Résilience Télémétrique & Contrats d'Interface",
+          content: `• <strong>Air-Gap Logique & Invariants Matériels :</strong> Interdiction absolue pour le LLM d'envoyer des consignes directes aux registres GPU. Toutes les actions passent par un décorateur de sécurité déterministe avec bornes strictes (clamping de puissance 200W-450W et coupure thermique d'urgence dès 80.0°C).
+          • <strong>Résilience aux Pannes de Télémétrie InfluxDB :</strong> Gestion robuste des coupures de capteurs et paquets manquants : le système effectue une imputation d'urgence sur les dernières métriques horodatées valides plutôt que de propager des valeurs NaN déstabilisant l'arbitrage.
+          • <strong>Contrats d'Interface Immuables :</strong> Enveloppes JSON strictes validées par Pydantic (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) garantissant zéro plantage du dashboard en cas de microservice indisponible.
+          • <strong>Gestion des Embeddings & Migration :</strong> Stratégie d'isolation vectorielle dans DuckDB par équipe (<code>team_&lt;id&gt;.db</code>) et pipeline de ré-indexation transparent lors des changements de modèles d'embeddings.`
         },
         {
           num: "Étape 05",
@@ -429,10 +430,10 @@ const CASE_STUDIES = {
           num: "Étape 04",
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
-          title: "Résolution Non-Linéaire & Refroidissement Anticipatoire",
-          content: `• <strong>Non-linéarités thermiques :</strong> Prise en compte de la dépendance en température d'Arrhenius de la résistance interne et de la génération de chaleur réversible (chaleur entropique dOCV/dT).
-          • <strong>Satisfaction stricte des bornes :</strong> 0 dépassement de la limite critique de 45°C grâce à la pré-activation de l'étage de refroidissement liquide par anticipation.
-          • <strong>Indépendance des données :</strong> Le solveur résout la physique en direct à chaque pas de temps, éliminant tout besoin de jeu de données d'entraînement massif.`
+          title: "Bornes Physiques Réalistes & Stabilisation du Solveur SLSQP",
+          content: `• <strong>Résolution des Instabilités de Convergence :</strong> Les gradients abrupts sur les contraintes thermiques provoquaient initialement des oscillations numériques du solveur SLSQP. Résolu par la formulation de pénalités quadratiques douces asymétriques ($\Phi_{\text{therm}} = \max(0, T_{\text{core}} - 40)^2$) couplées à des bornes strictes de tension ($V \le 4.20\text{V}$) et de dérivée de courant ($\Delta I$).
+          • <strong>Refroidissement Anticipatoire :</strong> Le contrôleur enclenche l'étage de refroidissement liquide actif 90 secondes avant le pic de dissipation thermique de Joule, maintenant le cœur sous 39.5°C et évitant le bridage d'urgence.
+          • <strong>Frontière de Pareto Réaliste :</strong> Optimisation de l'équilibre bi-objectif entre temps de charge rapide et vieillissement cyclique, validée par calcul d'hypervolume 2D.`
         },
         {
           num: "Étape 05",
@@ -601,8 +602,10 @@ const CASE_STUDIES = {
           num: "Étape 04",
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
-          title: "Validation des Contraintes & Boucle de Correction",
-          content: `• <strong>Validation en boucle fermée :</strong> L'Agent Validateur vérifie que chaque repas recommandé ne contient aucun ingrédient interdit. En cas de non-conformité, il rejette la proposition et renvoie l'état à l'agent nutritionnel avec les contraintes non respectées.`
+          title: "Élimination des Hallucinations Arithmétiques & Validation Déterministe",
+          content: `• <strong>Élimination de la Dérive Arithmétique :</strong> Les tests initiaux sur prompt LLM monolithique révélaient des dérives de calcul de plus de 250 kcal sur un plan journalier (erreurs d'addition cumulative et calculs de métabolisme approximatifs).
+          • <strong>Délégation à des Fonctions Python Typées :</strong> Remplacement intégral des calculs mathématiques génératifs par des nœuds de code déterministes (formule de Mifflin-St Jeor en Python, requêtes SQL/Pandas sur les tables officielles de l'USDA), ramenant le taux d'erreur de calcul de 32% à 0%.
+          • <strong>Validation Médicale en Boucle Fermée :</strong> L'Agent Validateur vérifie formellement chaque ingrédient contre la liste d'allergies du patient avant toute restitution à l'utilisateur, rejetant toute proposition non conforme.`
         },
         {
           num: "Étape 05",
@@ -684,9 +687,10 @@ const CASE_STUDIES = {
           num: "Étape 04",
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
-          title: "Régularisation par Attention Rollout & PyTorch",
-          content: `• Implémentation en PyTorch d'une perte hybride : $\\mathcal{L} = \\mathcal{L}_{CE} + \\lambda \\cdot (1 - \\text{IoU}(\\text{AttentionMap}, \\text{PlantMask}))$.
-          • Entraînement distribué sur GPU avec mixup, cutmix et label smoothing.`
+          title: "Cadrage Spécimen & Régularisation d'Attention sur la Plante",
+          content: `• <strong>Élimination de l'Attention sur le Fond et les Bordures :</strong> Sur les planches d'herbiers scannées en très haute résolution, le mécanisme d'auto-attention des Vision Transformers classiques dérivait fréquemment sur le fond beige du papier, les bordures de montage et les étiquettes de collection au détriment des caractéristiques morphologiques de la plante.
+          • <strong>Perte Régularisée IoU en PyTorch :</strong> En complément d'un découpage et recadrage soigné des spécimens, implémentation d'une fonction de perte hybride pénalisant explicitement la fuite d'attention en dehors de la silhouette végétale : $\\mathcal{L} = \\mathcal{L}_{CE} + \\lambda \\cdot (1 - \\text{IoU}(\\text{AttentionMap}, \\text{PlantMask}))$.
+          • <strong>Résultat :</strong> L'attention du modèle est mathématiquement forcée sur les structures anatomiques réelles (veinules, tiges, folioles), éliminant les biais de collection muséale.`
         },
         {
           num: "Étape 05",
@@ -853,10 +857,11 @@ const CASE_STUDIES = {
           num: "Step 04",
           star: "A",
           starLabel: "Action & Implementation",
-          title: "Hardware Safety Guards & Interface Contracts",
-          content: `• <strong>Cyber-Physical Resilience:</strong> Immutable JSON contract envelopes (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) ensuring zero client crashes.
-          • <strong>Hardware Safety Guard:</strong> Automatic GPU power clamping and emergency thermal cutoff at 80.0°C, intercepting any telemetry bus exception via a dedicated Python decorator.
-          • <strong>Multi-Tenant Isolation:</strong> Dedicated DuckDB file per research team (<code>team_&lt;id&gt;.db</code>) eliminating cross-team context leakage.`
+          title: "Hardware Safety Guards, Telemetry Resilience & Schema Contracts",
+          content: `• <strong>Logical Air-Gap & Hardware Invariants:</strong> Strict architectural rule prohibiting the LLM from writing directly to GPU machine registers. All actuation requests must pass through a deterministic pre-flight guard enforcing strict bounds (power clamping 200W-450W and emergency thermal cutoff at 80.0°C).
+          • <strong>Telemetry Dropout Resilience:</strong> Robust fault handling for dropped InfluxDB telemetry packets and sensor timeouts: emergency imputation on last-known valid timestamps prevents NaN propagation from destabilizing cluster scheduling.
+          • <strong>Immutable Interface Contracts:</strong> Rigid Pydantic JSON contract envelopes (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) guaranteeing zero dashboard crashes even under microservice timeouts.
+          • <strong>Vector Memory Isolation:</strong> Multi-tenant DuckDB separation per team (<code>team_&lt;id&gt;.db</code>) with clean re-indexing pipelines resilient to embedding model version migrations.`
         },
         {
           num: "Step 05",
@@ -946,10 +951,10 @@ const CASE_STUDIES = {
           num: "Step 04",
           star: "A",
           starLabel: "Action & Implementation",
-          title: "Non-Linear Physics & Anticipatory Cooling",
-          content: `• <strong>Thermal Non-Linearities:</strong> Integrated Arrhenius temperature-dependent internal resistance and reversible entropic heat generation ($dOCV/dT$).
-          • <strong>Strict Boundary Enforcement:</strong> 0 violations of the critical 45°C threshold via proactive, anticipatory liquid cooling activation.
-          • <strong>Zero Training Data Dependency:</strong> Solves governing physics in real time at each step, completely independent of large empirical training datasets.`
+          title: "Physically Grounded Boundaries & SLSQP Solver Stabilization",
+          content: `• <strong>Resolving Numerical Convergence Oscillations:</strong> Sharp temperature boundary gradients initially caused numeric instability in the SLSQP optimizer. Resolved by formulating smooth asymmetric quadratic penalties ($\Phi_{\text{therm}} = \max(0, T_{\text{core}} - 40)^2$) coupled with strict clamping on terminal voltage ($V \le 4.20\text{V}$) and current slew rate ($\Delta I$).
+          • <strong>Anticipatory Active Cooling:</strong> The predictive controller activates the liquid chiller pump 90 seconds before the peak Joule heating transient, maintaining core temperature at 39.5°C and eliminating reactive throttling.
+          • <strong>Convex Pareto Optimization:</strong> Calibrated the multi-objective trade-off between ultra-fast charging speed and cycle aging, verified through 2D hypervolume metrics.`
         },
         {
           num: "Step 05",
@@ -1118,8 +1123,10 @@ const CASE_STUDIES = {
           num: "Step 04",
           star: "A",
           starLabel: "Action & Implementation",
-          title: "Closed-Loop Rejection & Guardrail Enforcement",
-          content: `• <strong>Closed-Loop Validation:</strong> The Validator Agent audits suggested meals against known allergens. Upon detection of a prohibited item, the suggestion is rejected with exact correction feedback.`
+          title: "Arithmetic Hallucination Elimination & Deterministic Guardrails",
+          content: `• <strong>Eliminating Cumulative Caloric Drift:</strong> Initial baseline testing with a monolithic LLM revealed arithmetic drift exceeding 250 kcal across a daily meal plan due to cumulative summing errors and approximated BMR formulas.
+          • <strong>Delegation to Typed Python Code:</strong> Replaced all generative math with deterministic Python function tools (Mifflin-St Jeor equation, structured SQL/Pandas queries against official USDA datasets), dropping mathematical failure rates from 32% to exactly 0%.
+          • <strong>Closed-Loop Medical Validation:</strong> The Validator Agent formally checks every recommended ingredient against patient allergens before returning recommendations, automatically rejecting and routing back non-compliant options.`
         },
         {
           num: "Step 05",
@@ -1201,9 +1208,10 @@ const CASE_STUDIES = {
           num: "Step 04",
           star: "A",
           starLabel: "Action & Implementation",
-          title: "Attention Rollout & PyTorch Regularization",
-          content: `• PyTorch implementation of a combined loss: $\\mathcal{L} = \\mathcal{L}_{CE} + \\lambda \\cdot (1 - \\text{IoU}(\\text{AttentionMap}, \\text{PlantMask}))$.
-          • Distributed GPU training with cutmix, mixup, and label smoothing.`
+          title: "Specimen Cropping & Plant Mask Attention Regularization",
+          content: `• <strong>Eliminating Attention Leakage onto Background & Sheet Margins:</strong> On high-resolution digitized herbarium sheets, standard Vision Transformer self-attention frequently attended to paper backgrounds, mounting tape, and museum stamps rather than actual plant morphology.
+          • <strong>PyTorch IoU-Regularized Loss:</strong> Combined tight specimen cropping with a custom loss penalty explicitly penalizing attention leaking outside the botanical silhouette mask: $\\mathcal{L} = \\mathcal{L}_{CE} + \\lambda \\cdot (1 - \\text{IoU}(\\text{AttentionMap}, \\text{PlantMask}))$.
+          • <strong>Impact:</strong> CrossViT attention maps were mathematically steered directly onto authentic botanical structures (leaf venation, stems, petal contours), eliminating archival spurious correlations.`
         },
         {
           num: "Step 05",
