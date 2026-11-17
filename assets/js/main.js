@@ -99,9 +99,9 @@ const I18N = {
     exp1_date: "Sept. 2025 — Sept. 2026",
     exp1_role: "Apprenti Ingénieur R&D IA, Systèmes & Déploiement Web",
     exp1_company: "Vestaclim & Laboratoire CEEP (ARMINES — Mines Paris) • Paris",
-    exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC sous Linux embarqué (Raspberry Pi 5) : séparation étanche entre l'agent cognitif et les automates pour garantir l'intégrité matérielle de la machine.",
-    exp1_li2: "Développement de l'interface de pilotage et du pont web applicatif : gestion sécurisée de l'authentification avec rafraîchissement automatique des tokens (JWT), résilience de la télémétrie InfluxDB face aux coupures capteurs et persistance hybride sans scrutation énergivore.",
-    exp1_li3: "Modélisation physique compacte (PINN / formulation 2C4R différentiable sous PyTorch) calibrée pour l'inférence temps réel, recalage stochastique par Filtre de Kalman et coordination hebdomadaire avec Mines Paris.",
+    exp1_li1: "Conception et déploiement d'une architecture agentique FastMCP et d'un contrôleur prédictif MPC sous Linux embarqué (Raspberry Pi 5) : découplage strict entre la boucle rapide de contrôle machine (100% autonome et déterministe) et l'agent cognitif distant, interdisant toute altération non vérifiée des registres physiques.",
+    exp1_li2: "Développement de l'interface de pilotage et du pont web applicatif : gestion sécurisée de l'authentification avec renouvellement automatique des tokens (JWT), résilience de la télémétrie InfluxDB (détection des capteurs défaillants avec passage en mode dégradé si la donnée est trop ancienne) et persistance PostgreSQL robuste lors des changements de modèles d'embeddings.",
+    exp1_li3: "Modélisation physique compacte (modèles entraînés hors cible, inférence et solveur différentiable 2C4R sous PyTorch adaptés aux capacités de calcul de l'embarqué), recalage par Filtre de Kalman et coordination hebdomadaire avec Mines Paris.",
     exp1_li4: "Validation des livrables par la direction technique et obtention des financements pour la thèse de doctorat issue du projet.",
 
     exp2_date: "Juin 2024 — Août 2024",
@@ -232,9 +232,9 @@ const I18N = {
     exp1_date: "Sept. 2025 — Sept. 2026",
     exp1_role: "R&D AI, Systems & Web Deployment Engineer Apprentice",
     exp1_company: "Vestaclim & CEEP Laboratory (ARMINES — Mines Paris) • Paris",
-    exp1_li1: "Designed and deployed a FastMCP agentic architecture and receding-horizon MPC controller on embedded Linux (Raspberry Pi 5): enforced a strict logical air-gap between cognitive agents and physical machine actuation.",
-    exp1_li2: "Architected the web supervision bridge and real-time event pipeline: resilient InfluxDB telemetry handling sensor dropouts, automated JWT token refresh authentication, and hybrid low-latency persistence.",
-    exp1_li3: "Formulated compact physics-informed neural representations (differentiable 2C4R model in PyTorch) optimized for real-time edge execution, Kalman state filtering, and scientific collaboration with Mines Paris researchers.",
+    exp1_li1: "Designed and deployed a FastMCP agentic architecture and receding-horizon MPC controller on embedded Linux (Raspberry Pi 5): enforced a strict boundary decoupling the autonomous deterministic control loop from high-level distant agent requests, prohibiting unverified register writes.",
+    exp1_li2: "Architected the web supervision bridge and real-time event pipeline: resilient InfluxDB telemetry handling dropped packets with safety fallback when sensor data goes stale, automated JWT token refresh, and robust PostgreSQL migrations across embedding model changes.",
+    exp1_li3: "Formulated compact physics-informed representations (models trained offline, lightweight differentiable 2C4R inference in PyTorch on the edge device), Kalman state filtering, and scientific collaboration with Mines Paris researchers.",
     exp1_li4: "Software deliverables praised by executive leadership, directly securing the doctoral research grant in partnership with Mines Paris.",
 
     exp2_date: "June 2024 — Aug. 2024",
@@ -337,10 +337,10 @@ const CASE_STUDIES = {
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
           title: "Garde-Fous Matériels, Résilience Télémétrique & Contrats d'Interface",
-          content: `• <strong>Air-Gap Logique & Invariants Matériels :</strong> Interdiction absolue pour le LLM d'envoyer des consignes directes aux registres GPU. Toutes les actions passent par un décorateur de sécurité déterministe avec bornes strictes (clamping de puissance 200W-450W et coupure thermique d'urgence dès 80.0°C).
-          • <strong>Résilience aux Pannes de Télémétrie InfluxDB :</strong> Gestion robuste des coupures de capteurs et paquets manquants : le système effectue une imputation d'urgence sur les dernières métriques horodatées valides plutôt que de propager des valeurs NaN déstabilisant l'arbitrage.
+          content: `• <strong>Découplage Temporel & Invariants Matériels :</strong> Découplage strict entre la boucle rapide de contrôle machine (100% autonome et déterministe) et l'agent cognitif distant : aucune dépendance temporelle envers le LLM (dont les temps d'inférence peuvent atteindre plusieurs minutes sur cible contrainte) pour assurer la sécurité machine.
+          • <strong>Résilience aux Pannes de Télémétrie InfluxDB :</strong> Gestion robuste des coupures de capteurs : interpolation sur micro-coupures de quelques secondes, et bascule immédiate en mode dégradé sécurisé si une mesure est trop ancienne (> TTL maximal), interdisant de piloter le système sur des métriques périmées.
           • <strong>Contrats d'Interface Immuables :</strong> Enveloppes JSON strictes validées par Pydantic (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) garantissant zéro plantage du dashboard en cas de microservice indisponible.
-          • <strong>Gestion des Embeddings & Migration :</strong> Stratégie d'isolation vectorielle dans DuckDB par équipe (<code>team_&lt;id&gt;.db</code>) et pipeline de ré-indexation transparent lors des changements de modèles d'embeddings.`
+          • <strong>Gestion & Migration des Embeddings :</strong> Pipeline de ré-indexation propre des bases de données lors des changements de dimensions ou de modèles d'embeddings, sans rupture de schéma ni corruption de données.`
         },
         {
           num: "Étape 05",
@@ -858,10 +858,10 @@ const CASE_STUDIES = {
           star: "A",
           starLabel: "Action & Implementation",
           title: "Hardware Safety Guards, Telemetry Resilience & Schema Contracts",
-          content: `• <strong>Logical Air-Gap & Hardware Invariants:</strong> Strict architectural rule prohibiting the LLM from writing directly to GPU machine registers. All actuation requests must pass through a deterministic pre-flight guard enforcing strict bounds (power clamping 200W-450W and emergency thermal cutoff at 80.0°C).
-          • <strong>Telemetry Dropout Resilience:</strong> Robust fault handling for dropped InfluxDB telemetry packets and sensor timeouts: emergency imputation on last-known valid timestamps prevents NaN propagation from destabilizing cluster scheduling.
+          content: `• <strong>Temporal Decoupling & Hardware Invariants:</strong> Strict architectural separation between the local fast control loop (100% autonomous and deterministic) and the high-level distant agent: zero time-critical dependency on the LLM (which can take several minutes on resource-constrained targets) to guarantee machine safety.
+          • <strong>Telemetry Dropout Resilience & Stale Data Guard:</strong> Robust fault handling for dropped InfluxDB telemetry packets: interpolation over transient dropouts, and automatic fallback to a safe degraded state if sensor data goes stale (> maximum TTL threshold), preventing obsolete control commands.
           • <strong>Immutable Interface Contracts:</strong> Rigid Pydantic JSON contract envelopes (<code>execution_status</code>, <code>system_context</code>, <code>db_trace</code>) guaranteeing zero dashboard crashes even under microservice timeouts.
-          • <strong>Vector Memory Isolation:</strong> Multi-tenant DuckDB separation per team (<code>team_&lt;id&gt;.db</code>) with clean re-indexing pipelines resilient to embedding model version migrations.`
+          • <strong>Embedding Model Migration Pipeline:</strong> Clean re-indexing and schema migration workflows ensuring database vector integrity across embedding model and dimension updates.`
         },
         {
           num: "Step 05",
