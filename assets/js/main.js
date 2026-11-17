@@ -125,7 +125,7 @@ const I18N = {
     edu3_date: "Sept. 2020 — Juin 2023",
     edu3_role: "Classes Préparatoires aux Grandes Écoles (CPGE) — MP",
     edu3_company: "Lycée Condorcet • Paris",
-    edu3_li1: "Formation intensive d'excellence en Mathématiques et Physique. Rigueur analytique et abstraction formelle.",
+    edu3_li1: "Formation approfondie en Mathématiques et Physique : analyse réelle, calcul matriciel, physique ondulatoire et thermodynamique.",
 
     // Footer
     footer_title: "Prêt à collaborer sur vos défis IA & Systèmes ?",
@@ -258,7 +258,7 @@ const I18N = {
     edu3_date: "Sept. 2020 — June 2023",
     edu3_role: "Intensive Foundation Degree (CPGE) — Maths & Physics",
     edu3_company: "Lycée Condorcet • Paris",
-    edu3_li1: "Intensive curriculum in advanced Mathematics and Theoretical Physics. High-level analytical rigor and formal abstraction.",
+    edu3_li1: "Rigorous Mathematics & Physics curriculum: real analysis, linear algebra, wave mechanics, and thermodynamics.",
 
     // Footer
     footer_title: "Ready to collaborate on your AI & Systems challenges?",
@@ -357,7 +357,7 @@ const CASE_STUDIES = {
           star: "R",
           starLabel: "Impact & Enseignements",
           title: "Enseignements Techniques & Démarche d'Ingénierie",
-          content: `• Démontre la supériorité de MCP pour outiller les agents autonomes sur des infrastructures cloud critiques et conteneurisées.
+          content: `• Valide concrètement l'intérêt du standard MCP pour sécuriser les agents autonomes sur des infrastructures cloud critiques : isolation des privilèges matériels, auditabilité complète et contrats JSON déterministes.
           • Perspectives : Intégration d'un module d'arbitrage prédictif pour différer les entraînements non urgents sur les heures à mix électrique 100% renouvelable.`
         }
       ],
@@ -467,18 +467,18 @@ const CASE_STUDIES = {
           num: "Étape 01",
           star: "S",
           starLabel: "Situation & Contexte Industriel",
-          title: "Le Défi : La Dette Technique des Modèles de ML",
-          content: `Beaucoup de modèles de Machine Learning restent au stade de notebooks exploratoires et échouent en production par manque de reproductibilité, de validation de données et de tests automatisés. L'objectif était de construire un pipeline de prédiction d'achat e-commerce complet, auditable et résilient aux variations de schéma.`
+          title: "Le Défi : La Dette Technique & la Reproductibilité en Production",
+          content: `Beaucoup de modèles de Machine Learning restent au stade de notebooks exploratoires et échouent en production par manque de reproductibilité, de validation de données et de tests automatisés. L'objectif était de construire un pipeline de prédiction d'achat e-commerce complet, auditable et résilient aux variations de schéma à partir de données transactionnelles déséquilibrées.`
         },
         {
           num: "Étape 02",
           star: "T",
           starLabel: "Tâche & Spécifications",
           title: "Objectifs & Responsabilités Clés",
-          content: `• Mise en place de l'architecture logicielle modulaire avec Kedro.
-          • Implémentation des nœuds de feature engineering et de gestion des valeurs manquantes.
-          • Intégration de l'optimisation bayésienne des hyperparamètres (Hyperopt TPE).
-          • Configuration du linter strict Ruff, des hooks de pre-commit et de la suite de tests Pytest.`
+          content: `• Conception d'une architecture modulaire sous Kedro séparant Data Catalog, nœuds de calcul et pipelines d'exécution.
+          • Implémentation du feature engineering et de l'encodage catégoriel sans fuite d'information (Data Leakage).
+          • Intégration de l'optimisation bayésienne des hyperparamètres (Hyperopt TPE) sur validation croisée répétée.
+          • Configuration du linter strict Ruff, des hooks de pre-commit et de la suite de tests automatisés Pytest.`
         },
         {
           num: "Étape 03",
@@ -517,24 +517,26 @@ const CASE_STUDIES = {
           num: "Étape 04",
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
-          title: "Prévention du Data Leakage & Rigueur Software",
-          content: `• <strong>Prévention du Data Leakage :</strong> Ajustement strict des transformateurs (LabelEncoders) uniquement sur le jeu d'entraînement avant projection sur le test.
-          • <strong>Qualité du code :</strong> Configuration de règles de linting strictes avec <code>ruff.toml</code> et typage statique Python rigoureux.`
+          title: "Transtypage Strict Hyperopt, Catalogue Étanche & RepeatedKFold",
+          content: `• <strong>Résolution du Bug de Typage Hyperopt vers LightGBM :</strong> Les distributions discrètes d'Hyperopt (<code>quniform</code>) retournent des flottants (ex: <code>max_depth = 6.0</code>, <code>num_leaves = 31.0</code>), ce qui provoquait des plantages <code>TypeError</code> et polluait les logs LightGBM. J'ai implémenté un mapping formel <code>override_schemas</code> avec validation <code>TypedDict</code> pour convertir automatiquement les hyperparamètres échantillonnés dans leurs types entiers stricts avant chaque itération de fitting.
+          • <strong>Architecture de Données Découplée (<code>catalog.yml</code>) :</strong> Structuration en couches immuables (<code>01_raw</code>, <code>02_intermediate</code>, <code>04_feature</code>, <code>06_models</code>). Aucun état n'est partagé de manière implicite en mémoire vive : les transformations d'encodage sont entraînées uniquement sur le train split puis appliquées au test split, garantissant zéro data leakage.
+          • <strong>Validation Croisée Répétée (<code>RepeatedKFold</code> 5x2 folds) :</strong> Pour traiter le déséquilibre de conversion e-commerce sans sur-ajustement opportuniste, évaluation conjointe des régularisations $L_1$ et $L_2$ (<code>reg_alpha</code>, <code>reg_lambda</code>) sur le F1-score macro.`
         },
         {
           num: "Étape 05",
           star: "R",
           starLabel: "Résultats & Benchmarks",
-          title: "Gains de Performance & Reproductibilité",
-          content: `• <strong>Performance F1-score :</strong> Amélioration de <strong>+7.4%</strong> par rapport au modèle LightGBM avec hyperparamètres par défaut.
-          • <strong>Automatisation :</strong> 100% du pipeline reproductible en une commande <code>kedro run</code>.`
+          title: "Gains de Performance & Reproductibilité Production",
+          content: `• <strong>Performance F1-score Macro :</strong> Gain de <strong>+7.4%</strong> par rapport au classifieur LightGBM avec hyperparamètres par défaut.
+          • <strong>Reproductibilité Totale :</strong> Pipeline 100% reproductible de bout en bout en une seule ligne de commande <code>kedro run</code>.
+          • <strong>Assurance Qualité Logicielle :</strong> 100% des tests unitaires passés avec succès sous Pytest, validation des schémas d'entrée et absence totale d'avertissements sous Ruff.`
         },
         {
           num: "Étape 06",
           star: "R",
           starLabel: "Impact & Enseignements",
           title: "Enseignements Techniques",
-          content: `• L'application des principes de Software Engineering au Machine Learning (MLOps) est un prérequis indispensable pour garantir la fiabilité des inférences en production.`
+          content: `• L'application rigoureuse des standards de Software Engineering (architecture découplée, typage strict, catalogues versionnés) transforme un script de modélisation fragile en un pipeline industriel robuste et maintenable.`
         }
       ],
       github: "../3-mlops-purchase-pipeline"
@@ -603,10 +605,10 @@ const CASE_STUDIES = {
           num: "Étape 04",
           star: "A",
           starLabel: "Action & Implémentation Logicielle",
-          title: "Élimination des Hallucinations Arithmétiques & Validation Déterministe",
-          content: `• <strong>Élimination de la Dérive Arithmétique :</strong> Les tests initiaux sur prompt LLM monolithique révélaient des dérives de calcul de plus de 250 kcal sur un plan journalier (erreurs d'addition cumulative et calculs de métabolisme approximatifs).
-          • <strong>Délégation à des Fonctions Python Typées :</strong> Remplacement intégral des calculs mathématiques génératifs par des nœuds de code déterministes (formule de Mifflin-St Jeor en Python, requêtes SQL/Pandas sur les tables officielles de l'USDA), ramenant le taux d'erreur de calcul de 32% à 0%.
-          • <strong>Validation Médicale en Boucle Fermée :</strong> L'Agent Validateur vérifie formellement chaque ingrédient contre la liste d'allergies du patient avant toute restitution à l'utilisateur, rejetant toute proposition non conforme.`
+          title: "Résolution Floue RapidFuzz & Déterminisme Arithmétique",
+          content: `• <strong>Résolution d'Entités par Recherche Floue (RapidFuzz) :</strong> En langage naturel libre, les utilisateurs décrivent leurs repas de façon approximative ("poulet braisé", "pomme rouge") sans correspondance exacte avec les colonnes de la base USDA. Pour interdire au LLM d'inventer des valeurs nutritionnelles arbitraires, j'ai développé un nœud de mapping flou avec <code>RapidFuzz</code> (token-sort ratio $> 85\\%$) pour contraindre chaque aliment sur sa ligne officielle certifiée.
+          • <strong>Élimination de la Dérive Arithmétique :</strong> Les tests initiaux sur prompt LLM monolithique révélaient des dérives cumulatives de plus de 250 kcal sur un plan journalier. Remplacement intégral des calculs génératifs par des fonctions Python typées (équation de Mifflin-St Jeor), ramenant l'erreur de calcul de 32% à 0%.
+          • <strong>Validation Médicale en Boucle Fermée :</strong> L'Agent Validateur vérifie formellement chaque ingrédient mappé contre la matrice d'allergènes du patient avant toute restitution à l'utilisateur, rejetant toute proposition non conforme.`
         },
         {
           num: "Étape 05",
@@ -881,7 +883,7 @@ const CASE_STUDIES = {
           star: "R",
           starLabel: "Impact & Takeaways",
           title: "Engineering Takeaways & Cloud Perspectives",
-          content: `• Demonstrates the power of the Model Context Protocol (MCP) to equip autonomous agents on critical, containerized cloud infrastructure.
+          content: `• Validates the Model Context Protocol (MCP) as an effective standard to secure autonomous agents on critical cloud infrastructure: strict hardware privilege isolation, complete auditability, and deterministic JSON contracts.
           • Perspectives: Integration of predictive carbon arbitration to schedule non-critical workloads during high renewable grid supply.`
         }
       ],
@@ -991,18 +993,18 @@ const CASE_STUDIES = {
           num: "Step 01",
           star: "S",
           starLabel: "Situation & Industrial Context",
-          title: "The Challenge: Production ML Technical Debt",
-          content: `Too many Machine Learning models remain stuck in messy exploratory Jupyter notebooks, failing in production due to lack of schema validation, data leakage, and automated testing. The objective was to build a complete, reproducible e-commerce purchase intention pipeline.`
+          title: "The Challenge: Technical Debt & Production Reproducibility",
+          content: `Too many Machine Learning models remain stuck in messy exploratory Jupyter notebooks, failing in production due to lack of schema validation, data leakage, and automated testing. The objective was to build a complete, reproducible e-commerce purchase intention pipeline on imbalanced transaction data.`
         },
         {
           num: "Step 02",
           star: "T",
           starLabel: "Task & Specifications",
           title: "Project Scope & Software Quality Objectives",
-          content: `• Establish a clean modular pipeline architecture using Kedro.
-          • Engineer automated data processing and stratified feature transformation nodes.
-          • Integrate Bayesian hyperparameter optimization (Hyperopt TPE).
-          • Configure strict Ruff linting, pre-commit hooks, and a comprehensive Pytest suite.`
+          content: `• Design a decoupled Kedro architecture isolating Data Catalog layers, compute nodes, and pipeline DAGs.
+          • Engineer automated data processing and categorical transformations with zero data leakage.
+          • Integrate Bayesian hyperparameter optimization (Hyperopt TPE) across repeated cross-validation folds.
+          • Configure strict Ruff linting, pre-commit hooks, and a comprehensive Pytest test suite.`
         },
         {
           num: "Step 03",
@@ -1041,24 +1043,26 @@ const CASE_STUDIES = {
           num: "Step 04",
           star: "A",
           starLabel: "Action & Implementation",
-          title: "Leakage Prevention & Strict Software Craft",
-          content: `• <strong>Strict Leakage Prevention:</strong> Fitted transformations exclusively on the training split before projecting onto validation sets.
-          • <strong>Code Standards:</strong> Configured strict linting rules via <code>ruff.toml</code> and static type checking.`
+          title: "Hyperopt Type Casting, Hermetic Catalog & RepeatedKFold",
+          content: `• <strong>Resolving Hyperopt-to-LightGBM Type Casting Bugs:</strong> Discrete hyperparameter sampling in Hyperopt (<code>quniform</code>) outputs float representations (e.g. <code>max_depth = 6.0</code>, <code>num_leaves = 31.0</code>), triggering repeated <code>TypeError</code> warnings in LightGBM. I implemented an explicit <code>override_schemas</code> dictionary backed by <code>TypedDict</code> to enforce integer casting prior to every training fold.
+          • <strong>Decoupled Data Catalog Architecture (<code>catalog.yml</code>):</strong> Structured data flow across immutable tiers (<code>01_raw</code>, <code>02_intermediate</code>, <code>04_feature</code>, <code>06_models</code>). No state is implicitly retained in volatile memory: encoding transformations are fitted strictly on training data and projected onto test splits, eliminating data leakage.
+          • <strong>Repeated Stratified Cross-Validation (<code>RepeatedKFold</code> 5x2 folds):</strong> To handle conversion class imbalance without opportunistic overfitting, jointly tuned $L_1$ and $L_2$ penalties (<code>reg_alpha</code>, <code>reg_lambda</code>) evaluated on macro F1-score.`
         },
         {
           num: "Step 05",
           star: "R",
           starLabel: "Results & Benchmarks",
           title: "Quantitative Metrics & Reproducibility",
-          content: `• <strong>F1-Score Gain:</strong> Improved by <strong>+7.4%</strong> over the baseline default LightGBM classifier.
-          • <strong>Single Command Reproducibility:</strong> 100% of pipeline stages executable with a single <code>kedro run</code> command.`
+          content: `• <strong>Macro F1-Score Gain:</strong> Improved by <strong>+7.4%</strong> over the baseline default LightGBM classifier.
+          • <strong>Single Command Reproducibility:</strong> 100% of pipeline stages executable with a single <code>kedro run</code> command.
+          • <strong>Software Quality:</strong> 100% test pass rate under Pytest, input schema validation, and zero Ruff linting warnings.`
         },
         {
           num: "Step 06",
           star: "R",
           starLabel: "Impact & Takeaways",
           title: "Engineering Takeaways",
-          content: `• Applying disciplined software engineering standards to machine learning workflows is mandatory for production reliability.`
+          content: `• Disciplined software engineering (type checking, versioned catalogs, modular nodes) is the critical boundary that turns exploratory notebooks into production-grade systems.`
         }
       ],
       github: "../3-mlops-purchase-pipeline"
@@ -1127,10 +1131,10 @@ const CASE_STUDIES = {
           num: "Step 04",
           star: "A",
           starLabel: "Action & Implementation",
-          title: "Arithmetic Hallucination Elimination & Deterministic Guardrails",
-          content: `• <strong>Eliminating Cumulative Caloric Drift:</strong> Initial baseline testing with a monolithic LLM revealed arithmetic drift exceeding 250 kcal across a daily meal plan due to cumulative summing errors and approximated BMR formulas.
-          • <strong>Delegation to Typed Python Code:</strong> Replaced all generative math with deterministic Python function tools (Mifflin-St Jeor equation, structured SQL/Pandas queries against official USDA datasets), dropping mathematical failure rates from 32% to exactly 0%.
-          • <strong>Closed-Loop Medical Validation:</strong> The Validator Agent formally checks every recommended ingredient against patient allergens before returning recommendations, automatically rejecting and routing back non-compliant options.`
+          title: "RapidFuzz Entity Resolution & Arithmetic Determinism",
+          content: `• <strong>Fuzzy Entity Resolution with RapidFuzz:</strong> In free natural language, users input colloquial food descriptions ("braised chicken", "red apple") that do not strictly match official USDA database keys. To prevent the LLM from inventing arbitrary macronutrient values, I engineered a fuzzy token-sort entity matching node via <code>RapidFuzz</code> (ratio $> 85\\%$) strictly binding colloquial queries to certified nutritional database entries.
+          • <strong>Eliminating Cumulative Caloric Drift:</strong> Initial baseline testing with a monolithic LLM revealed arithmetic drift exceeding 250 kcal across a daily meal plan due to cumulative summing errors. Replaced all generative math with typed Python function tools (Mifflin-St Jeor equation), dropping mathematical error rates from 32% to exactly 0%.
+          • <strong>Closed-Loop Medical Validation:</strong> The Validator Agent formally checks every mapped ingredient against patient allergens before returning recommendations, automatically rejecting and routing back non-compliant options.`
         },
         {
           num: "Step 05",
