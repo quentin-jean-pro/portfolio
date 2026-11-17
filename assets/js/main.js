@@ -26,9 +26,10 @@ const I18N = {
     
     // Stats
     stat_projects_label: "Projets Clés Documentés",
-    stat_repos_label: "Dépôts GitHub Publics",
+    stat_exp_num: "1 an",
+    stat_exp_label: "Alternance R&D Entreprise",
     stat_reproducible_label: "Code Reproductible & Testé",
-    stat_exp_label: "Expérience R&D & Systèmes",
+    stat_degree_label: "Diplôme Ingénieur en IA",
 
     // Section Projets
     projects_tag: "Réalisations Concrètes",
@@ -159,9 +160,10 @@ const I18N = {
     
     // Stats
     stat_projects_label: "Flagship Projects Documented",
-    stat_repos_label: "Public GitHub Repositories",
+    stat_exp_num: "1 Year",
+    stat_exp_label: "Enterprise R&D Apprenticeship",
     stat_reproducible_label: "Tested & Reproducible Code",
-    stat_exp_label: "R&D & Systems Experience",
+    stat_degree_label: "AI Master of Engineering",
 
     // Section Projets
     projects_tag: "Technical Showcase",
