@@ -16,7 +16,7 @@ const I18N = {
     
     // Hero
     hero_pill: "Disponible pour opportunités AI Engineer / MLOps / R&D",
-    hero_title: `Building intelligent systems that solve <span class="gradient-text">real-world problems</span>.`,
+    hero_title: `Concevoir des systèmes intelligents pour résoudre des <span class="gradient-text">défis concrets</span>.`,
     hero_subtitle: `Ingénieur en Intelligence Artificielle spécialisé dans le couplage entre 
       <strong>Systèmes Agentiques (MCP, LangGraph)</strong>, 
       <strong>Contrôle Prédictif (MPC)</strong> et 
