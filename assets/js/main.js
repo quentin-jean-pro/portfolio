@@ -112,7 +112,7 @@ const I18N = {
     exp2_li1: "Analyse de vulnérabilités et mise en œuvre de protocoles de gestion des incidents de sécurité IT.",
     exp2_li2: "Audit de conformité de l'infrastructure Cloud et durcissement des politiques de gouvernance IAM AWS.",
 
-    edu1_date: "Depuis Sept. 2023",
+    edu1_date: "Sept. 2023 — Sept. 2026",
     edu1_role: "Diplôme d'Ingénieur en Informatique — Spécialisation IA",
     edu1_company: "CY Tech (ex-EISTI) • Cergy",
     edu1_li1: "Majeure Intelligence Artificielle (Deep Learning, MLOps, Architectures Agentiques, Informatique Quantique).",
@@ -247,7 +247,7 @@ const I18N = {
     exp2_li1: "Vulnerability assessment and IT security incident management protocol implementation.",
     exp2_li2: "Cloud infrastructure security audit and AWS IAM governance hardening.",
 
-    edu1_date: "Since Sept. 2023",
+    edu1_date: "Sept. 2023 — Sept. 2026",
     edu1_role: "Master of Engineering in Computer Science & AI",
     edu1_company: "CY Tech (formerly EISTI) • Cergy",
     edu1_li1: "Major in Artificial Intelligence (Deep Learning, MLOps, Agentic Architectures, Quantum Computing).",
